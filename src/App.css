@@ -876,7 +876,6 @@
   .sml-6 {
     width: 50%;
   }
-}
 
 @media (min-width: 64rem) {
   .med-4 {
@@ -898,7 +897,6 @@
   .med-8 {
     width: 66.6667%;
   }
-}
 
 @media (max-width: 63.99rem) {
   .hide-for-small-only,
