@@ -562,6 +562,7 @@
 
 .newrvtype {
   background: #fff;
+  display: block;
   border: 2px solid #fff;
   border-radius: 5px;
   font-size: 10px;

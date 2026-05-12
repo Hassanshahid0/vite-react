@@ -109,6 +109,29 @@ const inspectionPlans = [
   },
 ]
 
+
+const inspectionNavItems = [
+  { label: 'Compare', href: '/used-car-inspections/compare' },
+  { label: 'Standard', href: '/used-car-inspections/standard' },
+  { label: 'Electric', href: '/used-car-inspections/electric' },
+  { label: 'Vintage & Classic', href: '/used-car-inspections/classic' },
+  { label: 'Exotic', href: '/used-car-inspections/exotic' },
+  { label: 'Live', href: '/remoteinspections' },
+  { label: 'RV', href: '/used-car-inspections/rv' },
+  { label: 'Commercial', href: '/used-car-inspections/commercial-vehicle' },
+  { label: 'Motorcycle', href: '/used-car-inspections/motorcycle' },
+  { label: 'Determining Car Value', href: '/car-value' },
+  { label: 'Add-Ons', href: '/used-car-inspections/add-ons' },
+]
+
+const corporateNavItems = [
+  { label: 'Auction Inspection', href: '/used-car-inspections/auction' },
+  { label: 'Marketplace Inspection', href: '/used-car-inspections/marketplace' },
+  { label: 'Mechanical Inspection', href: '/used-car-inspections/mechanical' },
+  { label: 'Pre-Warranty Inspection', href: '/used-car-inspections/prewarranty' },
+  { label: 'Prepaid Maintenance & Warranty Solutions', href: 'https://www.wrenchtotalcare.com/', external: true },
+]
+
 const rvItems = [
   'For all types of Motorhomes Recreational Vehicles (RVs)',
   'Comprehensive mechanical inspection of complete drive-train',
@@ -195,8 +218,8 @@ function App() {
                   <a className="main-nav__link" data-cy="inspections">Inspections</a>
                   <span className="main-nav__expander"><span>Expand</span></span>
                   <ul className="main-nav__list main-nav__list--child">
-                    {['Compare', 'Standard', 'Electric', 'Vintage & Classic', 'Exotic', 'Live', 'RV', 'Commercial', 'Motorcycle', 'Determining Car Value', 'Add-Ons'].map((item) => (
-                      <li className="main-nav__item main-nav__item--child" itemProp="name" key={item}><a className="main-nav__link main-nav__link--child" itemProp="url" href={url('/used-car-inspections/compare')}>{item}</a></li>
+                    {inspectionNavItems.map((item) => (
+                      <li className="main-nav__item main-nav__item--child" itemProp="name" key={item.label}><a className="main-nav__link main-nav__link--child" itemProp="url" href={url(item.href)}>{item.label}</a></li>
                     ))}
                   </ul>
                 </li>
@@ -206,8 +229,8 @@ function App() {
                   <a className="main-nav__link" data-cy="corporate">Corporate</a>
                   <span className="main-nav__expander"><span>Expand</span></span>
                   <ul className="main-nav__list main-nav__list--child">
-                    {['Auction Inspection', 'Marketplace Inspection', 'Mechanical Inspection', 'Pre-Warranty Inspection', 'Prepaid Maintenance & Warranty Solutions'].map((item) => (
-                      <li className="main-nav__item main-nav__item--child" itemProp="name" key={item}><a className="main-nav__link main-nav__link--child" itemProp="url" href={url('/corporate')}>{item}</a></li>
+                    {corporateNavItems.map((item) => (
+                      <li className="main-nav__item main-nav__item--child" itemProp="name" key={item.label}><a className="main-nav__link main-nav__link--child" itemProp="url" href={item.external ? item.href : url(item.href)}>{item.label}</a></li>
                     ))}
                   </ul>
                 </li>
@@ -317,7 +340,7 @@ function App() {
               <div className="vehicle-type__wrapper">
                 <div className="vehicle-type__pricing">
                   <div className="rvcommon">
-                    <h2 className="vehicle-type__header vehicle-type__header--rv rv_icon">RV<div className="newrvtype"><a className="rvtype motorhomes active">Motorhomes</a><a className="rvtype towable">Towables</a></div></h2>
+                    <h2 className="vehicle-type__header vehicle-type__header--rv rv_icon">RV<span className="newrvtype"><a className="rvtype motorhomes active">Motorhomes</a><a className="rvtype towable">Towables</a></span></h2>
                   </div>
                   <div className="vehicle-type__price newrvprice"><span className="money-sale-formatter sale-false" data-price="$449">$449</span></div>
                   <div className="vehicle-type__pricing-body newrvdesc" id="div_motorhomes"><ul className="vehicle-type__list">{rvItems.map((item) => <li className="vehicle-type__item" key={item}>{item}</li>)}</ul></div>
