@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const plans = [
   {
@@ -91,7 +91,7 @@ const plans = [
   }
 ];
 
-const RVPlan: React.FC = () => {
+const RVPlan = () => {
   const [rvType, setRvType] = useState<'motorhomes' | 'towable'>('motorhomes');
 
   return (
@@ -150,7 +150,7 @@ const RVPlan: React.FC = () => {
   );
 };
 
-const Pricing: React.FC = () => {
+const Pricing = () => {
   return (
     <section className="vehicle-type" id="pricing_tables">
       <div className="vehicle-type__header-wrap">

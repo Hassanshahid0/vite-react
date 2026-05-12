@@ -1,6 +1,4 @@
-import React from 'react';
-
-const AddOns: React.FC = () => {
+const AddOns = () => {
   return (
     <section className="add-ons">
       <h1 className="section-header section-header--add-ons">Add-ons to your Vehicle Inspection</h1>

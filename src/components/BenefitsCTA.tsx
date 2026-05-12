@@ -1,6 +1,4 @@
-import React from 'react';
-
-const BenefitsCTA: React.FC = () => {
+const BenefitsCTA = () => {
   const benefits = [
     { icon: 'support', text: 'Always get a person\non the phone' },
     { icon: 'dollar', text: 'No hidden\nfees' },

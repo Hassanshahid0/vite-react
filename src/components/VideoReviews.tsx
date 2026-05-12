@@ -1,6 +1,4 @@
-import React from 'react';
-
-const VideoReviews: React.FC = () => {
+const VideoReviews = () => {
   return (
     <section className="video-reviews">
       <div className="container container--wide">

@@ -1,6 +1,4 @@
-import React from 'react';
-
-const FAQ: React.FC = () => {
+const FAQ = () => {
   return (
     <section className="faq">
       <div className="container">

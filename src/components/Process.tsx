@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Process: React.FC = () => {
+const Process = () => {
   return (
     <section className="process" id="process">
       <div className="container">

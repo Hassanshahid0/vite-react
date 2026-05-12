@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Banner: React.FC = () => {
+const Banner = () => {
   return (
     <div className="banner">
       <img src="https://lemonsquad.com/zetr_local/assets/images/banner.v3.jpg" className="banner__image" alt="banner" />

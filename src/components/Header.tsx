@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Header: React.FC = () => {
+const Header = () => {
   return (
     <header className="main-header">
       <nav className="mini-nav hide-for-small-only">

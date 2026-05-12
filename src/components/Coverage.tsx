@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Coverage: React.FC = () => {
+const Coverage = () => {
   return (
     <section className="coverage-cta">
       <a className="coverage-cta__wrapper base-12 med-4" href="/remoteinspections">
