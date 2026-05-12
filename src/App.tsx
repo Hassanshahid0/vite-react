@@ -4,6 +4,11 @@ import Banner from './components/Banner';
 import Coverage from './components/Coverage';
 import Process from './components/Process';
 import Pricing from './components/Pricing';
+import AddOns from './components/AddOns';
+import BenefitsCTA from './components/BenefitsCTA';
+import VideoReviews from './components/VideoReviews';
+import FAQ from './components/FAQ';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -15,17 +20,12 @@ function App() {
         <Coverage />
         <Process />
         <Pricing />
+        <AddOns />
+        <BenefitsCTA />
+        <VideoReviews />
+        <FAQ />
       </div>
-      <footer style={{ padding: '40px 20px', textAlign: 'center', background: '#2d303a', color: 'white' }}>
-        <div className="container">
-          <p>&copy; 2026 Lemon Squad Auto Inspections. All rights reserved.</p>
-          <div style={{ marginTop: '20px' }}>
-            <a href="https://lemonsquad.com/contact" style={{ color: 'white', margin: '0 10px' }}>Contact</a>
-            <a href="https://lemonsquad.com/faqs" style={{ color: 'white', margin: '0 10px' }}>FAQs</a>
-            <a href="https://lemonsquad.com/login" style={{ color: 'white', margin: '0 10px' }}>Login</a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
