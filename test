@@ -1,0 +1,1359 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+      <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MHG8F8SF');</script>
+      <!-- End Google Tag Manager -->
+
+  <!-- Set the php variable so that client users can be identified in GA4 user_properties  -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1039511837"></script>
+  <script>
+  // Set up construct for gtag to use window.dataLayer
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+
+  // Update userRole and localStorage as needed.
+  let userRole = (typeof localStorage !== 'undefined' && localStorage.getItem('userRole')) || '';
+  let sendUserProperty = false;
+  if (userRole == '' || ('visitor' !== 'visitor' && userRole !== 'visitor')) {
+      userRole = 'visitor';
+      sendUserProperty = true;
+      try { localStorage.setItem('userRole', userRole); } catch (e) {}
+  }
+
+  gtag('js', new Date()); /*initalize*/
+  gtag('config', 'AW-1039511837', { send_page_view: false }); /*google ads*/
+
+  const gTagIds = {
+    admin:       ["G-6JKGBKH5J7"],
+    inspector:   ["G-6JKGBKH5J7"],
+    client:      ["G-8NEJTWM2FD"]
+  }[userRole] || ["G-GWH8LD9V8S","G-56EHNNT3R0"];
+  gTagIds.forEach(gTagId => {
+    gtag('config', gTagId, { send_page_view: false }); /*accepts gTagId as string only*/
+  }); /*google analytics*/
+
+  if (sendUserProperty) {
+      gtag('set', 'user_properties', { role: userRole });
+  }
+  gtag('event', 'page_view', { send_to: gTagIds });
+  
+  /* Facebook Pixel Code */
+  ! function(f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function() {
+      n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = '2.0';
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+  }(window, document, 'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '369683650094870');
+  fbq('track', 'PageView');
+  /* End Facebook Pixel Code */
+
+  /* bing bat tracking*/
+  (function(w, d, t, r, u) {
+    var f, n, i;
+    w[u] = w[u] || [], f = function() {
+      var o = {
+        ti: "17175882"
+      }; /*ti:"27001147"*/
+      o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad")
+    }, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function() {
+      var s = this.readyState;
+      s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null)
+    }, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i)
+  })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
+  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pre-Purchase Car Inspection | Vehicle Inspection</title>
+    <meta name="og:title" content="Pre-Purchase Car Inspection | Vehicle Inspection">
+    
+    <meta name="author" content="Lemon Squad Auto Inspections">
+    <meta name="copyright" content="2026 Lemon Squad Auto Inspections">
+    <meta name="google-site-verification" content="Mij2Np06KiOwnJPD5uic7uZUgeOevf4Fr-bSdGSgYmI">
+    <meta name="msvalidate.01" content="7D3DB66B9E5BF68E3304B77100A5A7AF">
+    <meta name="msvalidate.01" content="69A30CBAF66A3BE0EEED1F8C4020BBB3" />
+    <meta name="facebook-domain-verification" content="fn7l2lgq9rzl9iwt9bs4gbyv3w6hde" />
+        <meta name="description" content="Lemon Squad&trade; offers pre-purchase used car inspections. Mobile mechanics are on-site for all types of vehicles from cars, trucks, and motorcycles to RVs, commercial vehicles, vintage and classic cars. Call (888) 231-7965 to speak with an expert today." />
+    <meta name="og:description" content="Lemon Squad&trade; offers pre-purchase used car inspections. Mobile mechanics are on-site for all types of vehicles from cars, trucks, and motorcycles to RVs, commercial vehicles, vintage and classic cars. Call (888) 231-7965 to speak with an expert today." />
+        <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#f8cc37">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#f8cc37">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#f8cc37">
+        <link rel="canonical" href="https://lemonsquad.com/" />
+    <link rel="alternate" href="https://lemonsquad.com/" hreflang="en-us" />
+        <link rel="shortcut icon" href="https://lemonsquad.com/favicon_ls.png">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800%7COxygen:300,400,700">
+    <link rel="stylesheet" type="text/css" href="https://lemonsquad.com/zetr_local/assets/css/style.min.css?v=3">
+    <script async src="//161770.tctm.co/t.js"></script>
+        <link href="https://lemonsquad.com/css/jquery-ui.min.css" rel="stylesheet" />    <link href="https://lemonsquad.com/css/jquery.toast.min.css" rel="stylesheet" />    <link href="https://lemonsquad.com/zetr_local/assets/css/snippet_insurance.css" rel="stylesheet" />    <script type='application/ld+json'>
+    {
+        "@context": "http://www.schema.org",
+        "@type": "WebSite",
+        "name": "Lemon Squad",
+        "url": "http://lemonsquad.com"
+    }
+    </script>
+    <style>
+        .dropdown {
+            float: right;
+            margin-right: 115px;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 10px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: #2d303a;
+            font-family: inherit;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .dropbtn:hover {
+            cursor: pointer;
+        }
+
+        .dropdown:hover {
+            background-color: #dadada;
+            text-decoration: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #2d303a !important;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            -webkit-transition: opacity .3s ease-in;
+            -moz-transition: opacity .3s ease-in;
+            -o-transition: opacity .3s ease-in;
+            transition: opacity .3 ease-in;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #dadada;
+        }
+
+        .show {
+            display: block;
+            z-index: 11;
+        }
+    </style>
+    <style id="view-style-block"></style></head>
+
+<body class="production">
+        <header class="main-header">
+        <nav class="mini-nav hide-for-small-only">
+            <div class="container">
+                <ul class="mini-nav__list">
+                    <li id="nav-645" class="mini-nav__item">
+                        <a href="https://lemonsquad.com/inspector-signup" class="mini-nav__link">Become an Inspector</a>
+                    </li>
+                    <li id="nav-646" class="mini-nav__item">
+                        <a href="https://lemonsquad.com/order/inspection-request"
+                            class="mini-nav__link mini-nav__link--standout">Order an Inspection</a>
+                    </li>
+                                        <li id="nav-649" class="mini-nav__item">
+                        <a href="https://lemonsquad.com/login" class="mini-nav__link">Login</a>
+                    </li>
+                                    </ul>
+            </div>
+        </nav>
+        <div class="main-header__content">
+            <div class="container">
+                <div class="row">
+                    <div class="site-logo base-12 med-6">
+                        <a data-cy="logo" href="https://lemonsquad.com/"><img src="/images/layout/logo_primary.svg"
+                                class="site-logo__image"
+                                alt="Lemon Squad - Nationwide Used Car Inspection"></a>
+                    </div>
+                    <div class="main-header__details med-6">
+                        <p class="main-header__times"></p>
+                        <a class="main-header__number" data-cy="contact-number"
+                            href="tel:8882317965">
+                            (888) 231-7965</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="mobile-nav__menu-wrap base-4">
+                        <button class="mobile-nav__button mobile-nav__button--menu js-open-menu">
+                            <span class="mobile-nav__button-icon mobile-nav__button-icon--menu"><span
+                                    class="hidden">Open</span></span> Menu
+                        </button>
+                    </div>
+                    <div class="mobile-nav__call-wrap base-8">
+                        <a href="tel:8882317965"
+                            class="mobile-nav__button mobile-nav__button--call">
+                            <span
+                                class="mobile-nav__button-icon mobile-nav__button-icon--call">(888) 231-7965</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <div class="container">
+                <div class="row">
+                    <button class="main-nav__close js-close-menu"><span class="hidden">Close</span></button>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a class="main-nav__link" data-cy="home"
+                                href="https://lemonsquad.com/">Home</a></li>
+                        <li class="main-nav__item main-nav__item--has-children">
+                            <a class="main-nav__link" data-cy="inspections" style="cursor: pointer;">Inspections</a>
+                            <span class="main-nav__expander"><span>Expand</span></span>
+                            <ul class="main-nav__list main-nav__list--child ">
+                                <li class="main-nav__item main-nav__item--child" itemprop="name"><a data-cy="compare"
+                                    class="main-nav__link main-nav__link--child" itemprop="url"
+                                    href="https://lemonsquad.com/used-car-inspections/compare">Compare</a></li>
+                                <li class="main-nav__item main-nav__item--child" itemprop="name"><a data-cy="standard"
+                                    class="main-nav__link main-nav__link--child" itemprop="url"
+                                    href="https://lemonsquad.com/used-car-inspections/standard">Standard</a>
+                                </li>
+                                <li class="main-nav__item main-nav__item--child" itemprop="name"><a data-cy="electric"
+                                    class="main-nav__link main-nav__link--child" itemprop="url"
+                                    href="https://lemonsquad.com/used-car-inspections/electric">Electric</a>
+                                </li>
+                                <li class="main-nav__item main-nav__item--child" itemprop="name"><a itemprop="url"
+                                    data-cy="vintage-classic" class="main-nav__link main-nav__link--child"
+                                    href="https://lemonsquad.com/used-car-inspections/classic">Vintage &amp;
+                                    Classic</a></li>
+                                <li class="main-nav__item main-nav__item--child" itemprop="name"><a data-cy="exotic"
+                                    class="main-nav__link main-nav__link--child" itemprop="url"
+                                    href="https://lemonsquad.com/used-car-inspections/exotic">Exotic</a></li>
+                                <li class="main-nav__item main-nav__item--child" itemprop="name"><a data-cy="remoteinspections"
+                                    class="main-nav__link main-nav__link--child" itemprop="url"
+                                    href="https://lemonsquad.com/remoteinspections">Live</a></li>
+                                <li class="main-nav__item main-nav__item--child" itemprop="name"><a data-cy="rv"
+                                    class="main-nav__link main-nav__link--child" itemprop="url"
+                                    href="https://lemonsquad.com/used-car-inspections/rv">RV</a></li>
+                                <li class="main-nav__item main-nav__item--child" itemprop="name"><a data-cy="commercial"
+                                    class="main-nav__link main-nav__link--child" itemprop="url"
+                                    href="https://lemonsquad.com/used-car-inspections/commercial-vehicle">Commercial</a>
+                                </li>
+                                <li class="main-nav__item main-nav__item--child" itemprop="name"><a data-cy="motorcycle"
+                                        class="main-nav__link main-nav__link--child" itemprop="url"
+                                        href="https://lemonsquad.com/used-car-inspections/motorcycle">Motorcycle</a>
+                                </li>
+                                <li class="main-nav__item main-nav__item--child">
+                                    <a class="main-nav__link main-nav__link--child" data-cy="popular-inspection">Popular
+                                        Inspections</a>
+                                    <ul class="main-nav__list main-nav__list--grandchild" data-cy="inspection-dropdown">
+                                        <li class="main-nav__item main-nav__item--grandchild" itemprop="name"><a
+                                                class="main-nav__link main-nav__link--grandchild" itemprop="url"
+                                                data-cy="bmw"
+                                                href="https://lemonsquad.com/used-car-inspections/bmw">BMW</a></li>
+                                        <li class="main-nav__item main-nav__item--grandchild" itemprop="name"><a
+                                                class="main-nav__link main-nav__link--grandchild" itemprop="url"
+                                                data-cy="mercedes"
+                                                href="https://lemonsquad.com/used-car-inspections/mercedes-benz">Mercedes</a>
+                                        </li>
+                                        <li class="main-nav__item main-nav__item--grandchild" itemprop="name"><a
+                                                class="main-nav__link main-nav__link--grandchild" itemprop="url"
+                                                data-cy="porsche"
+                                                href="https://lemonsquad.com/used-car-inspections/porsche">Porsche</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="main-nav__item main-nav__item--child" itemprop="name"><a
+                                        class="main-nav__link main-nav__link--child" itemprop="url" data-cy="car-value"
+                                        href="https://lemonsquad.com/car-value">Determining Car Value</a></li>
+                                <li class="main-nav__item main-nav__item--child" itemprop="name"><a
+                                        class="main-nav__link main-nav__link--child" itemprop="url" data-cy="add-ons"
+                                        href="https://lemonsquad.com/used-car-inspections/add-ons">Add-Ons</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-nav__item" itemprop="name"><a class="main-nav__link" itemprop="url"
+                                id="menu_order_btn" data-cy="orders"
+                                href="https://lemonsquad.com/order/inspection-request">Order</a></li>
+                        <li class="main-nav__item" itemprop="name"><a class="main-nav__link" itemprop="url"
+                                data-cy="faqs" href="https://lemonsquad.com/faqs">FAQs</a></li>
+                        <li class="main-nav__item main-nav__item--has-children">
+                            <a class="main-nav__link" data-cy="corporate" style="cursor: pointer;">Corporate</a>
+                            <span class="main-nav__expander"><span>Expand</span></span>
+                            <ul class="main-nav__list main-nav__list--child " data-cy="corporate-dropdown">
+                                <li class="main-nav__item main-nav__item--child" itemprop="name"><a
+                                        class="main-nav__link main-nav__link--child" itemprop="url"
+                                        data-cy="auction-inspection"
+                                        href="https://lemonsquad.com/used-car-inspections/auction">Auction
+                                        Inspection</a></li>
+                                <li class="main-nav__item main-nav__item--child" itemprop="name"><a
+                                        class="main-nav__link main-nav__link--child" itemprop="url"
+                                        data-cy="marketplace-inspection"
+                                        href="https://lemonsquad.com/used-car-inspections/marketplace">Marketplace
+                                        Inspection</a></li>
+                                <li class="main-nav__item main-nav__item--child" itemprop="name"><a
+                                        class="main-nav__link main-nav__link--child" itemprop="url"
+                                        data-cy="mechanical-inspection"
+                                        href="https://lemonsquad.com/used-car-inspections/mechanical">Mechanical
+                                        Inspection</a></li>
+                                <li class="main-nav__item main-nav__item--child" itemprop="name"><a
+                                        class="main-nav__link main-nav__link--child" itemprop="url"
+                                        data-cy="pre-warranty-inspection"
+                                        href="https://lemonsquad.com/used-car-inspections/prewarranty">Pre-Warranty
+                                        Inspection</a></li>
+                                <li class="main-nav__item main-nav__item--child" itemprop="name"><a
+                                        class="main-nav__link main-nav__link--child" itemprop="url"
+                                        data-cy="prepaid-maintenance" target="wrenchtotalcare"
+                                        href="https://www.wrenchtotalcare.com/">Prepaid Maintenance &amp;<br>
+                                        Warranty Solutions</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-nav__item" itemprop="name"><a class="main-nav__link" itemprop="url"
+                                data-cy="areas" href="https://lemonsquad.com/local">Areas</a></li>
+                        <li class="main-nav__item" itemprop="name"><a class="main-nav__link" data-cy="blog"
+                                href="https://lemonsquad.com/blog/">Blog</a></li>
+                                                <li class="main-nav__item hide-for-large" itemprop="name"><a class="main-nav__link"
+                                data-cy="login" href="https://lemonsquad.com/login">Login</a></li>
+                                                <li class="main-nav__item main-nav__item--has-children">
+                            <a class="main-nav__link" style="cursor: pointer;">Contact</a>
+                            <span class="main-nav__expander"><span>Expand</span></span>
+                            <ul class="main-nav__list main-nav__list--child">
+                                <li class="main-nav__item main-nav__item--child" itemprop="name"><a
+                                        class="main-nav__link main-nav__link--child" itemprop="url"
+                                        data-cy="become-an-inspector"
+                                        href="https://lemonsquad.com/inspector-signup">Become an Inspector</a></li>
+                                <li class="main-nav__item main-nav__item--child" itemprop="name"><a
+                                        class="main-nav__link main-nav__link--child" itemprop="url" data-cy="corporate"
+                                        href="https://lemonsquad.com/corporate">Corporate</a></li>
+                                <li class="main-nav__item main-nav__item--child" itemprop="name"><a
+                                        class="main-nav__link main-nav__link--child" itemprop="url" data-cy="contact"
+                                        href="https://lemonsquad.com/contact">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="sideload-middle">
+
+        <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+        </script>
+<style>
+.money-sale-formatter.sale-true:before {
+    content: attr(data-old-price);
+    text-decoration: line-through;
+    font-size: medium;
+}
+
+.rvtype {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 10px;
+    color: #333;
+    text-transform: capitalize;
+    vertical-align: middle;
+    width: calc(50% - 2px);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.newrvtype {
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    width: 230px;
+    margin: 0px auto;
+    padding: 0px;
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+
+.rvtype.active {
+    background: #2e303a;
+    color: white;
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+</style>
+<div class="banner">
+    <img src="/zetr_local/assets/images/banner.v3.jpg" class="banner__image" alt="banner">
+    <div class="container banner__container">
+        <div class="banner__row row">
+            <div class="banner__form contact-form">
+                <div class="contact-form__text-wrap">
+                    <p class="contact-form__head">Don't buy a lemon<span class="trade_mark">&trade;</span></p>
+                    <p class="contact-form__text">Get your pre-purchase used car inspection today
+                        with&nbsp;Lemon&nbsp;Squad<span class="trade_mark_min">&trade;</span>.<br>We're here to prevent
+                        you from buying a lemon. </p>
+                </div>
+                <div id="E9898">
+                    <a class="btn" data-cy="order-inspection"
+                        style="width:80%;margin: 10px auto;text-align: center;display: block;"
+                        href="https://lemonsquad.com/order/inspection-request">Order Inspection</a>
+                    <a href="#process"> <img src="/zetr_local/assets/images/why-choose-us-z.jpg" style="max-width: 100%"
+                            alt="Why Choose Us" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- credits -->
+<section class="coverage-cta">
+    <a class="coverage-cta__wrapper base-12 med-4" href="/remoteinspections">
+        <h2 class="section-sub-head">INSTANT&nbsp;INSPECTIONS, BUILT&nbsp;FOR&nbsp;THE MOMENT&nbsp;YOU&nbsp;NEED&nbsp;THEM.</h2>
+        <p class="coverage-cta__text">Lemon Squad Live is designed for that high-pressure moment at the dealership or curb. Launch a session in minutes and get real-time expert help.</p>
+        <img alt="Cell Phone Showing Live call with car savvy trained inspector."
+            src="/images/ls-live-phone-call-t.png" style="max-height: 7.7em;margin: -1.1em 0px;" />
+    </a>
+    <a class="coverage-cta__wrapper base-12 med-4" href="/local">
+        <h2 class="section-sub-head">We cover the entire USA</h2>
+        <p class="coverage-cta__text">No matter where you live—or where your new car is—we have an inspector in your
+            area ready to take a look! We even cover Alaska and Hawaii.</p>
+        <div class="coverage-cta__map-icon">
+            <img class="coverage-cta__image" alt="We cover the entire USA"
+                src="/zetr_local/assets/images/usa-map.png" />
+        </div>
+    </a>
+    <a class="coverage-cta__wrapper base-12 med-4" href="/electric">
+        <h2 class="section-sub-head">EVS ARE DIFFERENT. INSPECT THEM DIFFERENTLY</h2>
+        <p class="coverage-cta__text">We inspect EVs like Tesla, Rivian, Lucid, Mach-E, IONIQ 5, Kia EV6, and 
+            more - checking for system alerts, charging faults, and battery-related red flags a standard mechanic 
+            (and a standard test drive) will miss.</p>
+        <img style="width:7.7em;margin: -0.3em 0px;" class="fill-dark" src="/images/layout/lemon-squad-sprite.svg#sprite-path-ev">
+    </a>
+</section>
+<!-- inspection process -->
+<section class="process" id="process">
+    <div class="container">
+        <div class="row">
+            <h1 class="section-header section-header--white">What is the Inspection Process?</h1>
+            <div class="process__step">
+                <div class="process__number-wrap"><span class="process__number">1</span></div>
+                <div class="section__text-wrap base-12 sml-6">
+                    <h2 class="section-sub-head section-sub-head--white">Order Inspection</h2>
+                    <p class="process__text process__text--one">Place an order for a vehicle inspection through the site
+                        or by phone.</p>
+                </div>
+                <div class="process__buttons base-12 sml-6">
+                    <a class="btn btn--order" data-cy="order-inspection2"
+                        href="https://lemonsquad.com/order/inspection-request">Order Online</a>
+                    <a class="btn btn--call" data-cy="call-center"
+                        href="tel:8882317965">(888) 231-7965</a>
+                </div>
+            </div>
+            <div class="process__step">
+                <div class="process__number-wrap"><span class="process__number">2</span></div>
+                <h2 class="section-sub-head section-sub-head--white">Our Inspector Inspects</h2>
+                <p class="process__text">Our expert inspector will contact your seller to verify the availability of the
+                    vehicle and set up an appointment to inspect your automobile. The inspector will go directly to the
+                    vehicle to perform the inspection.</p>
+            </div>
+            <div class="process__step">
+                <div class="process__number-wrap"><span class="process__number">3</span></div>
+                <h2 class="section-sub-head section-sub-head--white">Receive your report</h2>
+                <p class="process__text">The inspector will upload the report to us, and after an intricate error
+                    checking and reviewal process, you'll receive notification when your report is ready to login and
+                    view. You'll be notified the instant the report is ready to login and view.</p>
+            </div>
+        </div>
+    </div>
+    <div class="process__image-wrap">
+        <img class="process__image" src="https://lemonsquad.com/zetr_local/assets/images/red-car.png" alt="red car">
+    </div>
+</section>
+<!-- Begin Pricing Tables -->
+<section class="vehicle-type" data-equalizer data-equalize-on="large" id="pricing_tables">
+    <div class="vehicle-type__header-wrap">
+        <h1 class="section-header">Mobile Pre-Purchase Used Car Inspections</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="vehicle-type__nav"></div>
+            <div class="vehicle-type__owl owl-carousel">
+                <div class="vehicle-type__wrapper">
+                    <div class="vehicle-type__pricing" data-equalizer-watch>
+                        <h2 class="vehicle-type__header">Exotic</h2>
+                        <div class="vehicle-type__price">
+                            <span class="money-sale-formatter sale-false" data-price="$286">$286</span></div>
+                        <div class="vehicle-type__pricing-body">
+                            <ul class="vehicle-type__list">
+                                                                <li class="vehicle-type__item">For higher end vehicles (e.g. Porsche, Bugatti, Lamborghini, etc)</li>
+                                                                <li class="vehicle-type__item">Computer diagnosis of engine, transmission, ABS, and air-bag</li>
+                                                                <li class="vehicle-type__item">Comprehensive mechanical inspection of complete drive-train</li>
+                                                                <li class="vehicle-type__item">Inspection of the steering, suspension, and brakes</li>
+                                                                <li class="vehicle-type__item">Check for previous accident damage and flood damage</li>
+                                                                <li class="vehicle-type__item">Road test</li>
+                                                                <li class="vehicle-type__item">Fluid levels check</li>
+                                                                <li class="vehicle-type__item">More than 25 pictures</li>
+                                                                <li class="vehicle-type__item">More care, more detail, more attention</li>
+                                                                <li class="vehicle-type__item">Type: Pre-purchase used car inspection</li>
+                                                            </ul>
+                        </div>
+                        <div class="vehicle-type__cta">
+                            <a class="vehicle-type__btn vehicle-type__btn--report" data-cy="sample-report1"
+                                href="https://lemonsquad.com/sample/exotic">Sample Report</a>
+                            <a class="vehicle-type__btn" data-cy="order-inspection3"
+                                href="https://lemonsquad.com/order/inspection-request">Order Inspection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vehicle-type__wrapper">
+                    <div class="vehicle-type__pricing" data-equalizer-watch>
+                        <h2 class="vehicle-type__header vehicle-type__header--expert">Standard</h2>
+                        <div class="vehicle-type__price">
+                            <span class="money-sale-formatter sale-false" data-price="$220">$220</span></div>
+                        <div class="vehicle-type__pricing-body">
+                            <ul class="vehicle-type__list">
+                                                                <li class="vehicle-type__item">For cars newer than 20 years old</li>
+                                                                <li class="vehicle-type__item">Our best-seller!</li>
+                                                                <li class="vehicle-type__item">Perfect for most vehicles</li>
+                                                                <li class="vehicle-type__item">Computer diagnosis of engine, transmission, ABS, and air-bag</li>
+                                                                <li class="vehicle-type__item">Comprehensive mechanical inspection of complete drive-train</li>
+                                                                <li class="vehicle-type__item">Inspection of the steering, suspension, and brakes</li>
+                                                                <li class="vehicle-type__item">Check for previous accident damage and flood damage</li>
+                                                                <li class="vehicle-type__item">Road test</li>
+                                                                <li class="vehicle-type__item">Fluid levels check</li>
+                                                                <li class="vehicle-type__item">More than 25 pictures</li>
+                                                                <li class="vehicle-type__item">Type: Pre-purchase used car inspection</li>
+                                                            </ul>
+                        </div>
+                        <div class="vehicle-type__cta">
+                            <a class="vehicle-type__btn vehicle-type__btn--report" data-cy="sample-report2"
+                                href="https://lemonsquad.com/sample/expert">Sample Report</a>
+                            <a class="vehicle-type__btn" data-cy="order-inspection4"
+                                href="https://lemonsquad.com/order/inspection-request">Order Inspection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vehicle-type__wrapper">
+                    <div class="vehicle-type__pricing" data-equalizer-watch>
+                        <h2 class="vehicle-type__header vehicle-type__header--vintage">Classic</h2>
+                        <div class="vehicle-type__price">
+                            <span class="money-sale-formatter sale-false" data-price="$330">$330</span></div>
+                        <div class="vehicle-type__pricing-body">
+                            <ul class="vehicle-type__list">
+                                                                <li class="vehicle-type__item">For cars 20 years or older</li>
+                                                                <li class="vehicle-type__item">Comprehensive mechanical inspection of the engine and transmission</li>
+                                                                <li class="vehicle-type__item">Complete drive-line inspection</li>
+                                                                <li class="vehicle-type__item">Inspection of the steering, suspension, and brakes</li>
+                                                                <li class="vehicle-type__item">Check for previous accident damage and flood damage</li>
+                                                                <li class="vehicle-type__item">Check for previous body repairs or prior hidden damage</li>
+                                                                <li class="vehicle-type__item">Rust and bondo</li>
+                                                                <li class="vehicle-type__item">Verify engine and transmission numbers</li>
+                                                                <li class="vehicle-type__item">Road test</li>
+                                                                <li class="vehicle-type__item">More than 40 pictures</li>
+                                                                <li class="vehicle-type__item">Emphasis on age deterioration</li>
+                                                                <li class="vehicle-type__item">Type: Pre-purchase used car inspection</li>
+                                                            </ul>
+                        </div>
+                        <div class="vehicle-type__cta">
+                            <a class="vehicle-type__btn vehicle-type__btn--report" data-cy="sample-report3"
+                                href="https://lemonsquad.com/sample/classic">Sample Report</a>
+                            <a class="vehicle-type__btn" data-cy="order-inspection5"
+                                href="https://lemonsquad.com/order/inspection-request">Order Inspection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vehicle-type__wrapper">
+                    <div class="vehicle-type__pricing" data-equalizer-watch>
+                        <h2 class="vehicle-type__header vehicle-type__header--commercial">Commercial</h2>
+                        <div class="vehicle-type__price">
+                            <span class="money-sale-formatter sale-false" data-price="$365">$365</span></div>
+                        <div class="vehicle-type__pricing-body">
+                            <ul class="vehicle-type__list">
+                                                                <li class="vehicle-type__item">For all commercial vehicles</li>
+                                                                <li class="vehicle-type__item">Comprehensive mechanical inspection of complete drive-train</li>
+                                                                <li class="vehicle-type__item">Inspection of the steering, suspension, and brakes</li>
+                                                                <li class="vehicle-type__item">Check for previous accident damage and flood damage</li>
+                                                                <li class="vehicle-type__item">Examine all commercial components for condition and function</li>
+                                                                <li class="vehicle-type__item">Road test to be performed by the seller or seller's representative with the inspector as a passenger</li>
+                                                                <li class="vehicle-type__item">Fluid levels check</li>
+                                                                <li class="vehicle-type__item">More than 25 pictures</li>
+                                                                <li class="vehicle-type__item">Type: Pre-purchase used car inspection</li>
+                                                            </ul>
+                        </div>
+                        <div class="vehicle-type__cta">
+                            <a class="vehicle-type__btn vehicle-type__btn--report" data-cy="sample-report4"
+                                href="https://lemonsquad.com/sample/commercial">Sample Report</a>
+                            <a class="vehicle-type__btn" data-cy="order-inspection6"
+                                href="https://lemonsquad.com/order/inspection-request">Order Inspection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vehicle-type__wrapper">
+                    <div class="vehicle-type__pricing" data-equalizer-watch>
+                        <h2 class="vehicle-type__header vehicle-type__header--motorcycle">Motorcycle</h2>
+                        <div class="vehicle-type__price">
+                            <span class="money-sale-formatter sale-false" data-price="$210">$210</span></div>
+                        <div class="vehicle-type__pricing-body">
+                            <ul class="vehicle-type__list">
+                                                                <li class="vehicle-type__item">For all motorcycles</li>
+                                                                <li class="vehicle-type__item">Comprehensive mechanical inspection of the engine and transmission</li>
+                                                                <li class="vehicle-type__item">Complete drive-line inspection</li>
+                                                                <li class="vehicle-type__item">Inspection of the steering, suspension, and brakes</li>
+                                                                <li class="vehicle-type__item">Check for previous accident damage and flood damage</li>
+                                                                <li class="vehicle-type__item">Check for previous Body Repairs</li>
+                                                                <li class="vehicle-type__item">Rust and bondo</li>
+                                                                <li class="vehicle-type__item">Prior hidden damage</li>
+                                                                <li class="vehicle-type__item">Verify engine and transmission numbers</li>
+                                                                <li class="vehicle-type__item">Does not include road test</li>
+                                                                <li class="vehicle-type__item">More than 25 pictures</li>
+                                                                <li class="vehicle-type__item">Emphasis on age deterioration</li>
+                                                            </ul>
+                        </div>
+                        <div class="vehicle-type__cta">
+                            <a class="vehicle-type__btn vehicle-type__btn--report" data-cy="sample-report5"
+                                href="https://lemonsquad.com/sample/motorcycle">Sample Report</a>
+                            <a class="vehicle-type__btn" data-cy="order-inspection7"
+                                href="https://lemonsquad.com/order/inspection-request">Order Inspection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vehicle-type__wrapper">
+                    <div class="vehicle-type__pricing" data-equalizer-watch>
+                        <div class="rvcommon">
+                            <h2 class=" vehicle-type__header vehicle-type__header--rv rv_icon"
+                                style="padding-bottom:9px !important;">
+                                RV
+                                <div class="newrvtype">
+                                    <a class="rvtype motorhomes active" type="motorhomes"
+                                        deselect="towable">Motorhomes</a>
+                                    <a class="rvtype towable" type="towable" deselect="motorhomes">Towables</a>
+                                </div>
+                            </h2>
+                        </div>
+                        <div class="vehicle-type__price newrvprice">
+                            <span class="money-sale-formatter sale-false" data-price="$449">$449</span>                        </div>
+                        <div class="vehicle-type__pricing-body newrvdesc" id="div_motorhomes">
+
+                            <ul class="vehicle-type__list">
+                                                                <li class="vehicle-type__item">For all types of Motorhomes Recreational Vehicles (RVs)</li>
+                                                                <li class="vehicle-type__item">Comprehensive mechanical inspection of complete drive-train</li>
+                                                                <li class="vehicle-type__item">120 volt systems and appliances</li>
+                                                                <li class="vehicle-type__item">All appliances: stove, fridge, heater, A/C, water</li>
+                                                                <li class="vehicle-type__item">Fresh water and drainage check</li>
+                                                                <li class="vehicle-type__item">Audio and video component inspection</li>
+                                                                <li class="vehicle-type__item">Generator and LP gas systems check</li>
+                                                                <li class="vehicle-type__item">Leveling jacks</li>
+                                                                <li class="vehicle-type__item">Slide-outs</li>
+                                                                <li class="vehicle-type__item">More than 40 pictures</li>
+                                                                <li class="vehicle-type__item">Road test</li>
+                                                                <li class="vehicle-type__item">Recommended before any used Motorhomes purchase</li>
+                                                            </ul>
+                        </div>
+                        <div class="vehicle-type__pricing-body newrvdesc hide" id="div_towable">
+                            <ul class="vehicle-type__list">
+                                                                <li class="vehicle-type__item">For all types of Towables Recreational Vehicles (RVs)</li>
+                                                                <li class="vehicle-type__item">Comprehensive mechanical inspection of complete drive-train</li>
+                                                                <li class="vehicle-type__item">120 volt systems and appliances</li>
+                                                                <li class="vehicle-type__item">All appliances: stove, fridge, heater, A/C, water</li>
+                                                                <li class="vehicle-type__item">Generator and LP gas systems check</li>
+                                                                <li class="vehicle-type__item">Fresh water and drainage check</li>
+                                                                <li class="vehicle-type__item">Audio and video component inspection</li>
+                                                                <li class="vehicle-type__item">Leveling jacks</li>
+                                                                <li class="vehicle-type__item">Slide-outs</li>
+                                                                <li class="vehicle-type__item">More than 40 pictures</li>
+                                                                <li class="vehicle-type__item">Road test</li>
+                                                                <li class="vehicle-type__item">Recommended before any used Towables purchase</li>
+                                                            </ul>
+                        </div>
+                        <div class="vehicle-type__cta ">
+                            <a class="vehicle-type__btn vehicle-type__btn--report newrvbtn" data-cy="sample-report6"
+                                href="https://lemonsquad.com/sample/rv">Sample
+                                Report</a>
+                            <a class="vehicle-type__btn newrvbtn" data-cy="order-inspection8"
+                                href="https://lemonsquad.com/order/inspection-request?source=motorhomes">Order
+                                Inspection</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Vehicle Inspection",
+  "name": "Pre-Purchase Vehicle Inspection",
+  "description": "Nationwide pre-purchase car inspections by Lemon Squad",
+  "provider": {
+    "@type": "Organization",
+    "name": "Lemon Squad",
+    "url": "https://lemonsquad.com/",
+    "logo": "https://lemonsquad.com/images/layout/ls_logo.png"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Lemon Squad Pre-Purchase Inspection Packages",
+    "itemListElement": [
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Digital Vehicle Inspection","description": "Remote digital inspection with photos and report"},"price": "39.99","priceCurrency": "USD"},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Mechanical Vehicle Inspection","description": "On-site mechanical-only inspection"},"price": "150.00","priceCurrency": "USD"},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Arbitration Vehicle Inspection","description": "Inspection for arbitration or dispute resolution"},"price": "150.00","priceCurrency": "USD"},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Motorcycle Inspection","description": "Comprehensive pre-purchase motorcycle inspection"},"price": "209.99","priceCurrency": "USD"},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Standard Vehicle Inspection","description": "150+ point pre-purchase car, truck, or SUV inspection"},"price": "219.99","priceCurrency": "USD"},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Electric Vehicle Inspection","description": "Standard inspection plus EV-specific battery & charging checks"},"price": "249.00","priceCurrency": "USD"},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Exotic Vehicle Inspection","description": "Specialized inspection for exotic and high-end vehicles"},"price": "285.99","priceCurrency": "USD"},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Classic Vehicle Inspection","description": "Detailed inspection tailored for classic and vintage cars"},"price": "329.99","priceCurrency": "USD"},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Commercial Vehicle Inspection","description": "Inspection for box trucks, vans, and light commercial vehicles"},"price": "364.99","priceCurrency": "USD"},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "RV Motorhome - Class A Inspection","description": "Large Class A motorhome / bus-style RV inspection"},"price": "549.00","priceCurrency": "USD"},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "RV Motorhome - Class B Inspection","description": "Camper van / Class B motorhome inspection"},"price": "449.00","priceCurrency": "USD"},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "RV Motorhome - Class C Inspection","description": "Class C motorhome inspection"},"price": "499.00","priceCurrency": "USD"}
+    ]
+  },
+  "potentialAction": {
+    "@type": "AddAction",
+    "actionStatus": "PotentialActionStatus",
+    "name": "Schedule Inspection",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://lemonsquad.com/order/inspection-request?v_year={v_year}&v_make={v_make}&v_model={v_model}&v_city={v_city}&v_state={v_state}&v_zip={v_zip}&v_address1={v_address1}&v_contact_name={v_contact_name}&v_phone1={v_phone1}",
+      "encodingType": "application/x-www-form-urlencoded",
+      "httpMethod": "GET",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
+    },
+    "instrument": [
+      { "@type": "PropertyValueSpecification","valueName":"v_year","description": "Vehicle Year","valueRequired": true},
+      { "@type": "PropertyValueSpecification","valueName":"v_make","description": "Vehicle Make","valueRequired": true},
+      { "@type": "PropertyValueSpecification","valueName":"v_model","description": "Vehicle Model","valueRequired": true},
+      { "@type": "PropertyValueSpecification","valueName":"v_city","description": "City","valueRequired": true},
+      { "@type": "PropertyValueSpecification","valueName":"v_state","description": "State","valueRequired": true},
+      { "@type": "PropertyValueSpecification","valueName":"v_zip","description": "ZIP Code","valueRequired": true},
+      { "@type": "PropertyValueSpecification","valueName":"v_address1","description": "Street Address","valueRequired": true},
+      { "@type": "PropertyValueSpecification","valueName":"v_contact_name","description": "Contact Name","valueRequired": true},
+      { "@type": "PropertyValueSpecification","valueName":"v_phone1","description": "Contact Phone","valueRequired": true}
+    ]
+  }
+}
+</script>
+<script type='application/ld+json'>
+{
+    "@context": "http://www.schema.org",
+    "@type": "product",
+    "brand": "Lemon Squad",
+    "name": "Exotic Car Inspection",
+    "sku": "4",
+    "mpn": "4",
+    "image": "https://lemonsquad.com/images/layout/exotic_insp.jpg",
+    "description": "An exotic car is a fine piece of machinery! For exotic cars, our inspectors take more time, focus more attention, and examine in deeper detail every aspect of the vehicle. We take additional time and detailed care examining the finer points necessary and deserving such of a fine automobile.",
+    "url": "https://lemonsquad.com/used-car-inspections/exotic",
+    "@id": "https://lemonsquad.com/used-car-inspections/exotic",
+    "offers": [{
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "priceValidUntil": "2026-06-30",
+        "availability": "http://schema.org/InStock",
+        "url": "https://lemonsquad.com/order/inspection-request",
+        "price": "285.99"
+    }],
+     "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8131868131868",
+        "reviewCount": "273"
+    },
+     "review": {
+        "@type": "Review",
+        "reviewBody": "I was absolutely stunned by the excellent service from the Lemon Squad.  I am a first time buyer of an out of state car and found the Lemon Squad online.  What wonderful, competent, efficient and pleasant people.  Not only did the perform a superb inspection with a concise and detailed report including pictures, but they went out of their way to follow up with a question I had and even did extra research for me including pictures of similar cars.  I would highly recommend this service to anyone!  Thank you so much for the excellent service and help buying my car!!",
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Jeane Ziegler"
+        }
+    }
+}
+</script>
+<script type='application/ld+json'>
+{
+    "@context": "http://www.schema.org",
+    "@type": "product",
+    "brand": "Lemon Squad",
+    "name": "Standard Inspection",
+    "sku": "2",
+    "mpn": "2",
+    "image": "https://lemonsquad.com/images/layout/expert_insp.jpg",
+    "description": "The Standard Inspection is perfect for most vehicles. It's our most popular pre-purchase car inspection, and for good reason! It's complete and comprehensive in every way, and our customers are always satisfied with the results.",
+    "@id": "https://lemonsquad.com/used-car-inspections/standard",
+    "url": "https://lemonsquad.com/used-car-inspections/standard",
+    "offers": [{
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "priceValidUntil": "2026-06-30",
+        "availability": "http://schema.org/InStock",
+        "url": "https://lemonsquad.com/order/inspection-request",
+        "price": "219.99"
+    }],
+     "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.850296176629",
+        "reviewCount": "1857"
+    },
+     "review": {
+        "@type": "Review",
+        "reviewBody": "I can honestly say that my MONEY was WELL SPENT!!! You just saved me thousands of dollars on car repairs on a LEMON I almost bought and almost a thousands on travel I would have paid to see the car for myself. THANK YOU Lemon Squad!!! GREAT JOB!!!",
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Chris Miller"
+        }
+    }
+}
+</script>
+<script type='application/ld+json'>
+{
+    "@context": "http://www.schema.org",
+    "@type": "product",
+    "@id": "https://lemonsquad.com/used-car-inspections/classic",
+    "url": "https://lemonsquad.com/used-car-inspections/classic",
+    "brand": "Lemon Squad",
+    "name": "Classic and Vintage Car Inspection",
+    "sku": "3",
+    "mpn": "3",
+    "image": "https://lemonsquad.com/images/layout/vintage_insp.jpg",
+    "description": "Most classic and vintage cars just need more attention. That's why we have the Vintage Inspection package! We take a careful look at all the details that are really important on older cars such as signs of rust or rot, bondo, older repairs, and any prior or hidden damage.",
+    "offers": [{
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "priceValidUntil": "2026-06-30",
+        "availability": "http://schema.org/InStock",
+        "url": "https://lemonsquad.com/order/inspection-request",
+        "price": "329.99"
+    }],
+     "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7944358578053",
+        "reviewCount": "647"
+    },
+     "review": {
+        "@type": "Review",
+        "reviewBody": "Thanks again Lemon Squad-you are four for four now!  This would be a great car for me were I younger and had someplace to work on it.  But I am not young and have no shop so  the search continues! Will be in touch soon for another inspection by you guys-you are all great.  The report and pictures are professional, easy to read and give me peace of mind. Thanks and Happy 2016!",
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Phil Crane"
+        }
+    }
+}
+</script>
+<script type='application/ld+json'>
+{
+    "@context": "http://www.schema.org",
+    "@type": "product",
+    "brand": "Lemon Squad",
+    "name": "Commercial Vehicle Inspection",
+    "sku": "6",
+    "mpn": "6",
+    "image": "https://lemonsquad.com/images/layout/comm_insp.jpg",
+    "description": "Lets face it--commercial vehicles are pushed hard. We're here to make sure your commercial vehicle wasn't pushed past its limits. Our expert inspectors know these machines inside and out and will take extra care to note the industrial workings of your potential new vehicle.",
+    "@id": "https://lemonsquad.com/used-car-inspections/commercial-vehicle",
+    "url": "https://lemonsquad.com/used-car-inspections/commercial-vehicle",
+    "offers": [{
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "priceValidUntil": "2026-06-30",
+        "availability": "http://schema.org/InStock",
+        "url": "https://lemonsquad.com/order/inspection-request",
+        "price": "364.99"
+    }],
+     "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.71875",
+        "reviewCount": "64"
+    },
+     "review": {
+        "@type": "Review",
+        "reviewBody": "This was my first experience using inspection service through Lemon Squad. I am so glad to use this service before buying my vehicle. The Technician was on time and updated the report same day. The report was very informative and detailed with expert observations and analysis. I will definitely try this service again and recommend all others to use this service before buying your next vehicle.",
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Ahmad Asdi"
+        }
+    }
+}
+</script>
+<script type='application/ld+json'>
+{
+    "@context": "http://www.schema.org",
+    "@type": "product",
+    "brand": "Lemon Squad",
+    "name": "Motorcycle Inspection",
+    "sku": "1",
+    "mpn": "1",
+    "image": "https://lemonsquad.com/images/layout/moto_insp.jpg",
+    "description": "Our Motorcycle Inspection is the perfect choice for any awesome ride. After all, \"Born to be Wild\" was meant for your spirit--not the mechanics of your bike!",
+    "url": "https://lemonsquad.com/used-car-inspections/motorcycle",
+    "offers": [{
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "priceValidUntil": "2026-06-30",
+        "availability": "http://schema.org/InStock",
+        "url": "https://lemonsquad.com/order/inspection-request",
+        "price": "209.99"
+    }],
+     "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "9"
+    },
+     "review": {
+        "@type": "Review",
+        "reviewBody": "Great service, extremely polite staff,and a detailed report with specific pictures of area of concerns. Just hired them again for another, and will do the same in the future.",
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Victor Elmur"
+        }
+    }
+}
+</script>
+<script type='application/ld+json'>
+{
+    "@context": "http://www.schema.org",
+    "@type": "product",
+    "brand": "Lemon Squad",
+    "name": "RV Inspection",
+    "sku": "5",
+    "mpn": "5",
+    "image": "https://lemonsquad.com/images/layout/rv_insp.jpg",
+    "description": "The RV Pre-Purchase Inspection is the most comprehensive inspection we have, and we highly recommend this inspection be performed before any purchasing of a used RV of any size or type. Once you have it inspected by our Expert Inspectors, you can buy with confidence!",
+    "url": "https://lemonsquad.com/used-car-inspections/rv",
+    "offers": [{
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "priceValidUntil": "2026-06-30",
+        "availability": "http://schema.org/InStock",
+        "url": "https://lemonsquad.com/order/inspection-request",
+        "price": "449.00"
+    }],
+     "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7375",
+        "reviewCount": "80"
+    },
+     "review": {
+        "@type": "Review",
+        "reviewBody": "Thanks for a very good inspection ! Thanks to the Lemon Squad team for making it so easy, Thanks! Great job all around from start to finish.",
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Ben Giannantonio"
+        }
+    }
+}
+</script>
+<section class="add-ons">
+    <h1 class="section-header section-header--add-ons">Add-ons to your Vehicle Inspection</h1>
+    <div class="add-ons__text-wrap base-12 med-4">
+        <h2 class="section-sub-head">CARFAX Vehicle History Report</h2>
+        <p class="section-text">Millions of consumers rely on CARFAX Reports every day to help them decide whether or
+            not to buy a used car. Each report contains information about whether the car in question has been in an
+            accident, has any open recalls, previous owners, service history and much, much more. Available for all cars
+            with a VIN (1982 and newer).</p>
+        <p class="add-ons__price">
+            <span class="money-sale-formatter sale-false" data-price="$34.99">$34.99</span>        </p>
+    </div>
+    <div class="add-ons__text-wrap base-12 med-4">
+        <h2 class="section-sub-head">Verbal Vehicle Assessment Report</h2>
+        <p class="section-text">Receive a phone call when you receive your report from one of our in house professional
+            staff members. To help you gain a greater understanding of your report, we will explain your report in
+            detail to make sure you have a complete understanding of the vehicle.</p>
+        <p class="add-ons__price">
+            <span class="money-sale-formatter sale-false" data-price="$49.99">$49.99</span></p>
+    </div>
+</section>
+<!-- banner-placeholder --><div class="cta">
+    <div class="cta__wrapper owl-carousel">
+        <div class="cta__wrap">
+            <div class="cta__circle"><span class="cta__icon cta__icon--support"></span></div>
+            <p class="cta__text">Always get a person<br>on the phone</p>
+        </div>
+        <div class="cta__wrap">
+            <div class="cta__circle"><span class="cta__icon cta__icon--dollar"></span></div>
+            <p class="cta__text">No hidden<br>fees</p>
+        </div>
+        <div class="cta__wrap">
+            <div class="cta__circle"><span class="cta__icon cta__icon--clock"></span></div>
+            <p class="cta__text">Best turn around<br>time in the industry</p>
+        </div>
+        <div class="cta__wrap">
+            <div class="cta__circle"><span class="cta__icon cta__icon--check"></span></div>
+            <p class="cta__text">Easy to understand<br>reports</p>
+        </div>
+        <div class="cta__wrap">
+            <div class="cta__circle"><span class="cta__icon cta__icon--expert"></span></div>
+            <p class="cta__text">Qualified experienced<br />inspectors</p>
+        </div>
+        <div class="cta__wrap">
+            <div class="cta__circle"><span class="cta__icon cta__icon--car"></span></div>
+            <p class="cta__text">Largest company in<br>the industry</p>
+        </div>
+    </div>
+</div>
+<section class="video-reviews">
+    <div class="container container--wide">
+        <div class="row">
+            <div class="base-12 med-4">
+                <div style="position: relative;width: 100%; padding-bottom: 55.95%;margin-top: 20px;">
+                    <iframe style="width: 100%;height: 100%; position: absolute;top: 0px; left: 0px; border-width: 0px;"
+                        class="cta-video__vid" src="https://www.youtube.com/embed/_C6O564UdVM?rel=0" allowfullscreen
+                        id="howwedo_vid"></iframe>
+                </div>
+            </div>
+            <div class="reviews base-12 med-8">
+                <div class="callout plates-box" id="reviews-callout">
+                    <h3 class="reviews__head">Customer Reviews<span class="reviews__nav"></span></h3>
+                                        <div class="orbit" role="region" aria-label="Customer Reviews" data-orbit>
+                        <ul class="reviews__wrap reviews__owl owl-carousel">
+                                                        <li class="section-text" style="padding-top: 10px">
+                                                                <ul class="reviews__stars">
+                                    <li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li>                                </ul>
+                                                                Great service, extremely polite staff,and a detailed report with specific pictures of area of concerns.
+Just hired them again for another, and will do the same in the future. <a href="https://lemonsquad.com/customer-reviews">(Read More)</a>
+                                                                                                <span
+                                    class="section-text section-text--name">Victor E.</span>
+                            </li>
+                                                        <li class="section-text" style="padding-top: 10px">
+                                                                <ul class="reviews__stars">
+                                    <li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li>                                </ul>
+                                                                Thank you so much for doing such a great job inspecting the car. The price was very low compared to comprable cars and it seemed too good to be true. I appreciate you noting your concerns with the car and I will be using this service in the future. T<a href="https://lemonsquad.com/customer-reviews">. . .
+                                    (Read More)</a>
+                                                                                                <span
+                                    class="section-text section-text--name">Gary W.</span>
+                            </li>
+                                                        <li class="section-text" style="padding-top: 10px">
+                                                                <ul class="reviews__stars">
+                                    <li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li>                                </ul>
+                                                                Inspection was extremely helpful.  Items that could be seen in the photos on the listing but were overlooked were identified as potential issues during the inspection.  Since this vehicle was out of town, it was great having "boots on the ground" to <a href="https://lemonsquad.com/customer-reviews">. . .
+                                    (Read More)</a>
+                                                                                                <span
+                                    class="section-text section-text--name">William W.</span>
+                            </li>
+                                                        <li class="section-text" style="padding-top: 10px">
+                                                                <ul class="reviews__stars">
+                                    <li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li>                                </ul>
+                                                                Five Star Service , Prompt and very professional service. I will definitely use your firm again for my next classic vehicle purchase. 
+
+Regards,
+
+Rick <a href="https://lemonsquad.com/customer-reviews">(Read More)</a>
+                                                                                                <span
+                                    class="section-text section-text--name">Rick E.</span>
+                            </li>
+                                                        <li class="section-text" style="padding-top: 10px">
+                                                                <ul class="reviews__stars">
+                                    <li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li>                                </ul>
+                                                                you guys are great! your inspection helped me decide and gave me the needed second opinion on the curent status of the wrangler. i strongly recommend an inspection like this. any seller who doesn't agree to do one is hiding something. seller and myse<a href="https://lemonsquad.com/customer-reviews">. . .
+                                    (Read More)</a>
+                                                                                                <span
+                                    class="section-text section-text--name">Christoph M.</span>
+                            </li>
+                                                    </ul>
+                    </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End Pricing Tables -->
+<section class="faq">
+    <div class="faq__wrapper base-12 med-6">
+        <div class="faq__word-wrap">
+            <h1 class="faq__head">Frequently Asked Questions</h1>
+            <p class="faq__question js-accordion">How soon after I place my order will I get my report?</p>
+            <p class="faq__answer js-accordion-show">Inspections are typically completed within two business days, depending on the inspector's schedule, the seller's schedule, and the weather. Reports are usually uploaded the following morning that the inspection is done. Inspections that are completed on Friday will have the report reviewed on Saturday morning. We do our best to complete inspections by the next business day as long as the seller makes the car available for review and the inspection is ordered early enough the day before. Occasionally, the seller's schedule, the inspector's schedule or the weather may cause a delay. Please note we cannot guarantee a date of an inspection due to factors outside our control. Customers are encouraged to plan accordingly and make arrangements to hold a vehicle if necessary. We have a better chance of getting the inspection done faster, the sooner you place your order. We do not schedule inspections on weekends. Reports can not be expedited. We do our very best to get them out as soon as possible.</p>
+            <p class="faq__question js-accordion">What happens if they sell the vehicle I ordered an inspection on?</p>
+            <p class="faq__answer js-accordion-show">If the vehicle sells before we get there, we will put your order on hold while you look for another vehicle. When you find another vehicle you'd like us to inspect, we'll transfer the details and send our inspector right away!</p>
+            <p class="faq__question js-accordion">Can I use an AI assistant to help place an order?</p>
+            <p class="faq__answer js-accordion-show"><b>Yes</b>. You can provide your vehicle and contact details to an AI assistant, and it can generate a clickable link that pre-populates our order form.<br><br><b>Format of the link:</b> <code style='line-break: anywhere;'>https://lemonsquad.com/order/inspection-request?v_year={v_year}&v_make={v_make}&v_model={v_model}&v_city={v_city}&v_state={v_state}&v_zip={v_zip}&v_address1={v_address1}&v_contact_name={v_contact_name}&v_phone1={v_phone1}</code><br><br><b>Example AI Generated Link:</b><br><a style='color:white;' href='https://lemonsquad.com/order/inspection-request?v_year=2025&v_make=Jeep&v_model=Wrangler&v_city=Fort%20Ripley&v_state=MN&v_zip=56449&v_address1=123%20Blue%20St&v_contact_name=Jim&v_phone1=218-555-1234'>Order Inspection for 2025 Jeep Wrangler</a><br><br><b>Example Prompt:</b><br>Hey Seri! Help me order an inspection from lemonsquad.com for a 2025 Jeep Wrangler located at 8995 South 6th St. Brainerd, MN 56401, the contact is Jim and his phone number is 218-555-1234. Note: The link will open our order form with fields pre-filled. You must still confirm details and complete payment to complete the order.<br><br> AI Schema AddAction urlTemplate: <br>
+
+<code style='line-break: anywhere;font-size: smaller;line-height: 1.2em;display: inline-block;'>
+&lt;script type="application/ld+json"&gt;{"@context":"https://schema.org","@type":"Service","serviceType":"Vehicle Inspection","name":"Pre-Purchase Vehicle Inspection","description":"Nationwide pre-purchase car inspections by Lemon Squad","potentialAction":{"@type":"AddAction","actionStatus":"PotentialActionStatus","name":"Schedule Inspection","target":{"@type":"EntryPoint","urlTemplate":"https://lemonsquad.com/order/inspection-request?v_year={v_year}&v_make={v_make}&v_model={v_model}&v_city={v_city}&v_state={v_state}&v_zip={v_zip}&v_address1={v_address1}&v_contact_name={v_contact_name}&v_phone1={v_phone1}","encodingType":"application/x-www-form-urlencoded","httpMethod":"GET","actionPlatform":["http://schema.org/DesktopWebPlatform","http://schema.org/MobileWebPlatform"]},"instrument":[{"@type":"PropertyValueSpecification","valueName":"v_year","description":"Vehicle Year","valueRequired":true},{"@type":"PropertyValueSpecification","valueName":"v_make","description":"Vehicle Make","valueRequired":true},{"@type":"PropertyValueSpecification","valueName":"v_model","description":"Vehicle Model","valueRequired":true},{"@type":"PropertyValueSpecification","valueName":"v_city","description":"City","valueRequired":true},{"@type":"PropertyValueSpecification","valueName":"v_state","description":"State","valueRequired":true},{"@type":"PropertyValueSpecification","valueName":"v_zip","description":"ZIP Code","valueRequired":true},{"@type":"PropertyValueSpecification","valueName":"v_address1","description":"Street Address","valueRequired":true},{"@type":"PropertyValueSpecification","valueName":"v_contact_name","description":"Contact Name","valueRequired":true},{"@type":"PropertyValueSpecification","valueName":"v_phone1","description":"Contact Phone","valueRequired":true}]}}&lt;/script&gt;
+</code>
+
+</p>
+            <p class="faq__question js-accordion">I bought a plane ticket/arranged for transportation. How quickly can you do the inspection?</p>
+            <p class="faq__answer js-accordion-show">Please don't purchase a plane ticket or arrange for transportation until you have your report in your hand. Things can change unexpectedly due to circumstances outside of our control. Be prepared to deal with delays should they arise.</p>
+        </div>
+    </div>
+    <img class="faq__image base-12 med-6" src="/zetr_local/assets/images/mechanic.png" alt="mechanic">
+</section>
+<script>   
+// lets so something to save form data and restore it upon return
+function initViewScripts() {    
+    var banner_from = window.location.pathname;
+    banner_from = banner_from.replace(/\\|\//g, '');
+    localStorage.setItem('type', banner_from);
+    //js/order_form.js contains a object orderFormRepo used for form field saving in clientStorage
+    var $orderForm = $('#order_form'),
+        repo = new orderFormRepo('restclient');
+    // get the last submitted values back
+    repo.restore($orderForm, 'order_form');
+
+    $('#inspection_type').on('change', function() {
+        repo.preserve($orderForm, 'order_form');
+    });
+
+    $("#orderBtn").click(function(e) {
+        // preserve the current entered values on click
+        repo.preserve($orderForm, 'order_form');
+    });
+    $('.rvtype').click(function() {
+        var select = $(this).attr('type');
+        var deselect = $(this).attr('deselect');
+        $('.' + select).addClass('active');
+        $('.' + deselect).removeClass('active');
+        $('div#div_' + select).removeClass('hide').addClass('show');
+        $('div#div_' + deselect).removeClass('show').addClass('hide');
+    });
+}
+</script>
+</div>
+<footer>
+  <section class="logo-carousel">
+    <div class="container">
+      <div class="row">
+        <div class="logo-carousel__wrapper owl-carousel">
+          <div class="logo-carousel__logo"><img class=logo-carousel__logo-image src="/images/carfax_logo.svg" alt="CARFAX Vehicle Hostory Report"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cta-strip cta-strip--order">
+    <div class="container">
+      <div class="row">
+        <div class="base-12">
+          <p class="cta-strip__text cta-strip__text--order">Don’t spend your hard-earned money on a lemon.</p>
+          <a class="btn btn--cta-order" href="https://lemonsquad.com/order/inspection-request">Order Inspection</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="footer__contact base-12 med-5">
+      <img src="/images/layout/logo_primary.svg" class="site-logo__image footer__logo" alt="Lemon Squad - Nationwide Used Car Inspection">
+      <p><a href="https://lemonsquad.com/inspector-signup" class="btn">Become an Inspector</a></p>
+    </div>
+    <div class="base-12 med-7">
+      <div class="footer__text-wrap">
+        <p class="section-sub-head">Contact</p>
+        <p class="footer__text footer__text--bold">Phone:<a class="footer__text footer__text--link" data-cy="footer-contact-number" href="tel:8882317965"> (888) 231-7965</a></p>
+        <p class="footer__text"></p>
+        <p class="footer__text">Orders may be placed online 24/7</p>
+      </div>
+    </div>
+  </section>
+  <section class="footer-lower">
+    <div class="container">
+      <div class="row">
+        <p class="footer-lower__text base-12 med-6">2026 &copy; ALL Rights Reserved. <a class="footer-lower__text footer-lower__text--link-left" href="https://lemonsquad.com/privacy">Privacy Policy</a> | <a class="footer-lower__text footer-lower__text--linkleft" href="https://lemonsquad.com/terms">Terms of Service.</a></p>
+
+      </div>
+    </div>
+  </section>
+  </footer>
+
+  <script type="application/ld+json">{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://lemonsquad.com/",
+  "name": "Lemon Squad",
+  "legalName": "Lemon Squad Auto Inspections",
+  "sameAs" : [
+    "https://twitter.com/LemonSquad",
+    "https://www.facebook.com/LemonSquad",
+    "https://www.youtube.com/user/LemonSquadinspectors"
+  ],
+  "logo": "https://lemonsquad.com/zetr_local/assets/images/lemon-squad-auto-inspections-2017.v3.png",
+  "contactPoint": [{
+  "@type": "ContactPoint",
+  "telephone": "(888) 231-7965",
+  "contactType": "customer service"
+  }]
+  }</script>
+
+    <script src="https://lemonsquad.com/js/jquery.min.js"></script>
+    <script src="https://lemonsquad.com/zetr_local/bower_components/foundation-sites/dist/foundation.min.js"></script>
+    <script src="https://lemonsquad.com/js/app.js"></script>
+    <script src="https://lemonsquad.com/zetr_local/bower_components/what-input/what-input.min.js"></script>
+    <script src="https://lemonsquad.com/zetr_local/assets/js/main.min.js"></script>
+    <!-- Custom Scripts -->
+                  <script src="https://lemonsquad.com/zetr_local/bower_components/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+              <script src="https://lemonsquad.com/zetr_local/bower_components/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+              <script src="https://lemonsquad.com/js/jquery-ui.min.js"></script>
+              <script src="https://lemonsquad.com/js/jquery.autocomplete.min.js"></script>
+              <script src="https://lemonsquad.com/js/order_form.js"></script>
+              <script src="https://lemonsquad.com/js/jquery.toast.min.js"></script>
+              <!-- End Scripts -->
+    ﻿<script>
+// Local buffer for our records
+let braggingQueue = [];
+
+// Initial delay to start the loop
+window.setTimeout(showBraggingToast, 5 * 1000);
+
+function showBraggingToast() {
+  // 1. Check if we have records in our local queue
+  if (braggingQueue.length > 0) {
+    // Pop the first record and display it
+    const record = braggingQueue.shift();
+    displayToast(record);
+    
+    // Schedule the next Toast in 30 seconds
+    window.setTimeout(showBraggingToast, 30 * 1000);
+  } else {
+    // 2. Queue is empty, fetch a new batch of 10
+    $.ajax({
+      dataType: "json",
+      url: window.location.origin + "/order/bragging_rights",
+      success: function(resultObj) {
+        if (resultObj.result === 500) {
+          // No results found, stop the Toast altogether
+        } else if (resultObj.result === 200 && Array.isArray(resultObj.data) && resultObj.data.length > 0) {
+          // Fill the queue with the new batch
+          braggingQueue = resultObj.data;
+          
+          // Immediately show the first one from the new batch
+          const record = braggingQueue.shift();
+          displayToast(record);
+
+          // Schedule the next Toast in 30 seconds
+          window.setTimeout(showBraggingToast, 30 * 1000);
+        }
+        
+      },
+      error: function() {
+        // If the server fails, try again in 1 minute to be safe
+        window.setTimeout(showBraggingToast, 60 * 1000);
+      }
+    });
+  }
+}
+
+/**
+ * Helper to handle the UI toast logic
+ */
+function displayToast(data) {
+  if (typeof data === 'object' && typeof data.make === 'string' && $.toast) {
+    $.toast({
+      heading: data.year + ' ' + ucwords(data.make) + ' ' + ucwords(data.model),
+      text: ucwords(data.fname) + ' ' + data.lname + ', just ordered an inspection on a ' + data.year + ', ' + ucwords(data.make) + ' ' + ucwords(data.model),
+      icon: 'info',
+      loader: true,
+      loaderBg: '#9EC600',
+      hideAfter: 10 * 1000
+    });
+  }
+}
+
+function ucwords(str) {
+  return (str + '').replace(/^([a-z])|\s+([a-z])/g, function($1) {
+    return $1.toUpperCase();
+  });
+}
+</script>
+    <script>$(document).ready(function(){if(typeof initViewScripts=="function"){initViewScripts();}});</script>
+    <script type="text/javascript" src="//cdn.callrail.com/companies/669715816/362bed47de01f08a8d8f/12/swap.js"></script>
+    <!-- BREACH prevention "random string" : MHyTAib5TA -->
+    </body>
+</html>
+<script>
+    $(document).ready(function() {
+        $('.hotspot').click(function(e) {
+            const page = "home";
+            const userAction = $(this).attr('data-eventInfo');
+            const category = page.charAt(0).toUpperCase() + page.substring(1).toLowerCase()
+            gtag('event', userAction, {
+                'event_category': category,
+                'event_label': 'Page'
+            });
+            return true;
+        });
+    });
+</script>
+
+
+i want to convert exact code in react  
