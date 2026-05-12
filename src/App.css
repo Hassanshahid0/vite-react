@@ -4,12 +4,34 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .production {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Fix for potential row overflow from Foundation/external CSS */
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  max-width: 100% !important;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Ensure container doesn't exceed viewport */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #sideload-middle {
@@ -62,15 +84,14 @@ body {
   color: white;
 }
 
-/* Ensure images are responsive */
+/* Ensure images are responsive and don't overflow */
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
-/* Container fix */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+/* Specific fix for elements that often cause overflow */
+section, div, header, footer {
+  box-sizing: border-box;
 }
