@@ -475,6 +475,8 @@
   min-height: 150px;
   padding: 1.3rem;
   text-align: center;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 .benefits span {
