@@ -103,11 +103,11 @@ function App() {
       if (addBtn) {
         const key = (addBtn.getAttribute('data-cs-add-to-cart') ?? '').toLowerCase()
         const packageMap: Record<string, { name: string; price: number }> = {
-          standard: { name: 'Standard', price: 100 },
-          classical: { name: 'Classical', price: 200 },
-          classic: { name: 'Classical', price: 200 },
-          exotic: { name: 'Exotic', price: 300 },
-          commercial: { name: 'Commercial', price: 400 },
+          standard: { name: 'Standard', price: 270 },
+          classical: { name: 'Classical', price: 380 },
+          classic: { name: 'Classical', price: 380 },
+          exotic: { name: 'Exotic', price: 340 },
+          commercial: { name: 'Commercial', price: 15 },
         }
         const pkg = packageMap[key]
         if (!pkg) return
@@ -226,9 +226,10 @@ function App() {
             <div class="base-12">
               <div class="cs-packages">
                 <div class="cs-card">
+                  <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=60" class="cs-card__image" alt="Standard Inspection">
                   <div class="cs-card__head">
                     <h3 class="cs-card__title">Standard</h3>
-                    <div class="cs-card__price">$100</div>
+                    <div class="cs-card__price">$270</div>
                   </div>
                   <ul class="cs-card__list">
                     <li>For cars newer than 20 years old</li>
@@ -246,9 +247,10 @@ function App() {
                 </div>
 
                 <div class="cs-card">
+                  <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=800&q=60" class="cs-card__image" alt="Classical Inspection">
                   <div class="cs-card__head">
                     <h3 class="cs-card__title">Classical</h3>
-                    <div class="cs-card__price">$200</div>
+                    <div class="cs-card__price">$380</div>
                   </div>
                   <ul class="cs-card__list">
                     <li>For cars 20 years or older</li>
@@ -268,9 +270,10 @@ function App() {
                 </div>
 
                 <div class="cs-card cs-card--featured">
+                  <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=60" class="cs-card__image" alt="Exotic Inspection">
                   <div class="cs-card__head">
                     <h3 class="cs-card__title">Exotic</h3>
-                    <div class="cs-card__price">$300</div>
+                    <div class="cs-card__price">$340</div>
                   </div>
                   <ul class="cs-card__list">
                     <li>For higher end vehicles (e.g. Porsche, Bugatti, Lamborghini, etc)</li>
@@ -288,9 +291,10 @@ function App() {
                 </div>
 
                 <div class="cs-card">
+                  <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=800&q=60" class="cs-card__image" alt="Commercial Inspection">
                   <div class="cs-card__head">
                     <h3 class="cs-card__title">Commercial</h3>
-                    <div class="cs-card__price">$400</div>
+                    <div class="cs-card__price">$15</div>
                   </div>
                   <ul class="cs-card__list">
                     <li>For work trucks, vans, and commercial vehicles</li>
@@ -505,30 +509,50 @@ function App() {
           <div class="row">
             <div class="base-12">
               <div class="cs-panel" style="max-width:980px;margin:0 auto">
-                <h3 class="cs-panel__title">Payment Methods</h3>
+                <h3 class="cs-panel__title">Select Payment Method</h3>
                 <div class="cs-pay">
-                  <div class="cs-pay__item">
+                  <div class="cs-pay__item" data-pm="zelle">
                     <div class="cs-pay__title">Zelle / Bank Transfer</div>
-                    <div class="cs-pay__text">Send payment to admin. Contact: +18578228188</div>
                   </div>
-                  <div class="cs-pay__item">
+                  <div class="cs-pay__item" data-pm="card">
+                    <div class="cs-pay__title">Credit / Debit Card</div>
+                  </div>
+                  <div class="cs-pay__item" data-pm="wise">
+                    <div class="cs-pay__title">Wise</div>
+                  </div>
+                  <div class="cs-pay__item" data-pm="jazzcash">
+                    <div class="cs-pay__title">JazzCash</div>
+                  </div>
+                  <div class="cs-pay__item" data-pm="paypal">
                     <div class="cs-pay__title">PayPal</div>
-                    <div class="cs-pay__text">Send payment to admin PayPal email (add your admin email here).</div>
                   </div>
-                  <div class="cs-pay__item">
+                  <div class="cs-pay__item" data-pm="cashapp">
                     <div class="cs-pay__title">CashApp</div>
-                    <div class="cs-pay__text">Send payment to admin CashApp tag (add your admin tag here).</div>
+                  </div>
+                  <div class="cs-pay__item" data-pm="payoneer">
+                    <div class="cs-pay__title">Payoneer</div>
                   </div>
                 </div>
 
-                <div style="margin-top:18px">
-                  <label class="cs-label" for="txid">Transaction ID / Reference</label>
-                  <input class="cs-input" id="txid" name="txid" placeholder="Enter transaction reference" />
+                <div id="cs-pay-details" style="margin-top:24px">
+                  <div class="cs-pay-placeholder">
+                    Please select a payment method above to see the instructions.
+                  </div>
                 </div>
 
-                <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
-                  <a href="/order-now" class="cs-package__btn">Back</a>
-                  <button type="button" class="cs-package__btn cs-package__btn--primary" data-cs-confirm-payment="1">I Paid</button>
+                <div class="cs-tx-card" style="margin-top:24px">
+                  <div class="cs-tx-card__header">
+                    <label class="cs-tx-card__label" for="txid">Transaction Verification</label>
+                  </div>
+                  <div class="cs-tx-card__body">
+                    <input class="cs-tx-card__input" id="txid" name="txid" placeholder="Paste your transaction ID or reference here" />
+                    <p class="cs-tx-card__help">Submit the ID after completing your payment to the details shown above.</p>
+                  </div>
+                </div>
+
+                <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap">
+                  <a href="/cart" class="cs-package__btn">Back to Cart</a>
+                  <button type="button" class="cs-package__btn cs-package__btn--primary" data-cs-confirm-payment="1">Confirm Payment</button>
                 </div>
               </div>
             </div>
@@ -750,25 +774,15 @@ function App() {
         <nav class="mini-nav hide-for-small-only">
           <div class="container">
             <ul class="mini-nav__list">
-              ${
-                !isMainPage
-                  ? `
-                <li class="mini-nav__item"><a href="/" class="mini-nav__link">Home</a></li>
-                <li class="mini-nav__item"><a href="${appHowItWorkPath}" class="mini-nav__link">How It Works</a></li>
-                <li class="mini-nav__item"><a href="${appPackagesPath}" class="mini-nav__link">Packages</a></li>
-                <li class="mini-nav__item"><a href="${appOrderNowPath}" class="mini-nav__link mini-nav__link--accent">Order Now</a></li>
-                <li class="mini-nav__item"><a href="/faq" class="mini-nav__link">FAQ</a></li>
-                <li class="mini-nav__item"><a href="${appOrderNowPath}" class="mini-nav__link mini-nav__link--standout">Get Started</a></li>
-              `
-                  : `
-                <li class="mini-nav__item">
-                  <a href="/order-now" class="mini-nav__link mini-nav__link--standout">Order an Inspection</a>
-                </li>
-                <li class="mini-nav__item">
-                  <a href="/faq" class="mini-nav__link">FAQ</a>
-                </li>
-              `
-              }
+              <li class="mini-nav__item"><a href="/" class="mini-nav__link">Home</a></li>
+              <li class="mini-nav__item"><a href="${appHowItWorkPath}" class="mini-nav__link">How It Works</a></li>
+              <li class="mini-nav__item"><a href="${appPackagesPath}" class="mini-nav__link">Packages</a></li>
+              <li class="mini-nav__item">
+                <a href="/order-now" class="mini-nav__link mini-nav__link--standout">Order an Inspection</a>
+              </li>
+              <li class="mini-nav__item">
+                <a href="/faq" class="mini-nav__link">FAQ</a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -784,6 +798,18 @@ function App() {
             </div>
           </div>
         </div>
+        <nav class="main-nav">
+          <div class="container">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="/" class="main-nav__link">Home</a></li>
+              <li class="main-nav__item"><a href="${appHowItWorkPath}" class="main-nav__link">How It Works</a></li>
+              <li class="main-nav__item"><a href="${appPackagesPath}" class="main-nav__link">Packages</a></li>
+              <li class="main-nav__item"><a href="${appOrderNowPath}" class="main-nav__link">Order Now</a></li>
+              <li class="main-nav__item"><a href="/faq" class="main-nav__link">FAQ</a></li>
+              <li class="main-nav__item hide-for-medium"><button class="main-nav__link js-close-menu" style="width:100%;margin-top:10px;background:rgba(220,38,38,.1);border-color:rgba(220,38,38,.2);color:#dc2626 !important">Close Menu</button></li>
+            </ul>
+          </div>
+        </nav>
         <div class="mobile-nav hide-for-medium">
           <div class="container">
             <div class="row">
@@ -921,12 +947,22 @@ function App() {
 
       doc.querySelectorAll('a[href]').forEach((a) => {
         const href = a.getAttribute('href') ?? ''
-        if (/^tel:/i.test(href) && shouldReplaceNumber(href)) a.setAttribute('href', newTel)
+        if (/^tel:/i.test(href)) {
+          a.setAttribute('href', 'https://wa.me/18578228188')
+          a.setAttribute('target', '_blank')
+          a.setAttribute('rel', 'noopener noreferrer')
+          a.className = 'main-header__number'
+        }
       })
 
-      doc.querySelectorAll('a[href]').forEach((a) => {
-        const href = a.getAttribute('href') ?? ''
-        if (/^tel:/i.test(href)) a.setAttribute('href', newTel)
+      doc.querySelectorAll('a.btn--call, a[data-cy="call-center"]').forEach((a) => {
+        a.setAttribute('href', 'https://wa.me/18578228188')
+        a.setAttribute('target', '_blank')
+        a.setAttribute('rel', 'noopener noreferrer')
+        a.className = 'main-header__number'
+        if (a.textContent?.toLowerCase().includes('call')) {
+          a.textContent = '+18578228188'
+        }
       })
 
       const textWalker = doc.createTreeWalker(doc.body, NodeFilter.SHOW_TEXT)
@@ -1124,7 +1160,7 @@ function App() {
               </p>
               <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
                 <a class="btn btn--order" href="/#pricing_tables">See inspection packages</a>
-                <a class="btn btn--call" href="tel:+18578228188">Call +18578228188</a>
+                <a class="main-header__number" href="https://wa.me/18578228188" target="_blank" rel="noopener noreferrer">+18578228188</a>
               </div>
             </div>
           </div>
@@ -1153,6 +1189,128 @@ function App() {
       headLinkHrefs,
     }
   }, [isHowItWorkPage, isPackagesPage, isOrderNowPage, isInspectionsPage, pageRaw, pageBaseOrigin])
+
+  useEffect(() => {
+    const onCardClick = (e: MouseEvent) => {
+      const target = e.target as Element | null
+      const card = target?.closest('.cs-card') as HTMLElement | null
+      if (!card) return
+
+      document.querySelectorAll('.cs-card').forEach((el) => el.classList.remove('cs-card--selected'))
+      card.classList.add('cs-card--selected')
+    }
+
+    document.addEventListener('click', onCardClick)
+    return () => document.removeEventListener('click', onCardClick)
+  }, [bodyHtml])
+
+  useEffect(() => {
+    const onPayMethodClick = (e: MouseEvent) => {
+      const target = e.target as Element | null
+      const item = target?.closest('.cs-pay__item') as HTMLElement | null
+      if (!item) return
+
+      const method = item.getAttribute('data-pm')
+      document.querySelectorAll('.cs-pay__item').forEach((el) => el.classList.remove('selected'))
+      item.classList.add('selected')
+
+      const detailsContainer = document.getElementById('cs-pay-details')
+      if (!detailsContainer) return
+
+      let html = ''
+      switch (method) {
+        case 'zelle':
+          html = `
+            <div class="cs-pay-detail-card">
+              <h4 style="margin:0 0 12px;color:#111827">Zelle / Bank Transfer Details</h4>
+              <p style="margin:4px 0">Account Holder: <strong>Admin Carz Squad</strong></p>
+              <p style="margin:4px 0">IBM / Account: <strong>US99 1234 5678 9012 3456</strong></p>
+              <p style="margin:4px 0">Zelle Email: <strong>admin@carzsquad.com</strong></p>
+              <p style="margin:12px 0 0;color:#6b7280;font-size:13px;border-top:1px solid #eee;padding-top:12px">
+                Please transfer exactly <strong>$${cartTotal}</strong> and paste the ID below.
+              </p>
+            </div>
+          `
+          break
+        case 'card':
+          html = `
+            <div class="cs-pay-detail-card">
+              <h4 style="margin:0 0 16px;color:#111827">Secure Card Payment (Stripe)</h4>
+              <div class="cs-card-form">
+                <div style="margin-bottom:12px">
+                  <label class="cs-label">Cardholder Name</label>
+                  <input class="cs-input" placeholder="Full Name on Card" />
+                </div>
+                <div style="margin-bottom:12px">
+                  <label class="cs-label">Card Number</label>
+                  <input class="cs-input" placeholder="0000 0000 0000 0000" />
+                </div>
+                <div class="cs-card-form-row" style="display:flex;gap:12px">
+                  <div style="flex:1">
+                    <label class="cs-label">Expiry Date</label>
+                    <input class="cs-input" placeholder="MM / YY" />
+                  </div>
+                  <div style="flex:1">
+                    <label class="cs-label">CVC</label>
+                    <input class="cs-input" placeholder="123" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          `
+          break
+        case 'wise':
+          html = `
+            <div class="cs-pay-detail-card">
+              <h4 style="margin:0 0 12px;color:#111827">Wise Transfer</h4>
+              <p style="margin:4px 0">Recipient Email: <strong>wise@carzsquad.com</strong></p>
+              <p style="margin:4px 0">Reference: <strong>CarzOrder-${Date.now()
+                .toString()
+                .slice(-6)}</strong></p>
+            </div>
+          `
+          break
+        case 'jazzcash':
+          html = `
+            <div class="cs-pay-detail-card">
+              <h4 style="margin:0 0 12px;color:#111827">JazzCash / Mobile Account</h4>
+              <p style="margin:4px 0">Account Number: <strong>0300 1234567</strong></p>
+              <p style="margin:4px 0">Account Name: <strong>CARZ SQUAD ADMIN</strong></p>
+            </div>
+          `
+          break
+        case 'paypal':
+          html = `
+            <div class="cs-pay-detail-card">
+              <h4 style="margin:0 0 12px;color:#111827">PayPal Payment</h4>
+              <p style="margin:4px 0">PayPal Email: <strong>paypal@carzsquad.com</strong></p>
+              <p style="margin:4px 0">Note: Use "Friends & Family" for faster processing.</p>
+            </div>
+          `
+          break
+        case 'cashapp':
+          html = `
+            <div class="cs-pay-detail-card">
+              <h4 style="margin:0 0 12px;color:#111827">CashApp</h4>
+              <p style="margin:4px 0">Cashtag: <strong>$CarzSquad</strong></p>
+            </div>
+          `
+          break
+        case 'payoneer':
+          html = `
+            <div class="cs-pay-detail-card">
+              <h4 style="margin:0 0 12px;color:#111827">Payoneer</h4>
+              <p style="margin:4px 0">Payoneer Email: <strong>payoneer@carzsquad.com</strong></p>
+            </div>
+          `
+          break
+      }
+      detailsContainer.innerHTML = html
+    }
+
+    document.addEventListener('click', onPayMethodClick)
+    return () => document.removeEventListener('click', onPayMethodClick)
+  }, [bodyHtml, cartTotal])
 
   const baseCss = [
     "@font-face{font-family:'lemon-squad';src:local('Montserrat'),local('Arial');font-weight:400;font-style:normal;font-display:swap;}",
@@ -1203,18 +1361,24 @@ body[data-page="how-it-work"]{
 .main-header__number{
   display:inline-flex;
   align-items:center;
+  justify-content: center;
   gap:10px;
-  padding:10px 14px;
+  padding:12px 24px;
   border-radius:999px;
-  background: rgba(16, 185, 129, .14);
-  border: 1px solid rgba(16, 185, 129, .35);
-  color:#111827 !important;
+  background: #25D366 !important;
+  border: 1px solid #128C7E !important;
+  color:#fff !important;
   text-decoration:none !important;
   font-weight:700;
+  font-size: 16px;
+  min-width: 200px;
   letter-spacing:.2px;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 .main-header__number:hover{
-  background: rgba(16, 185, 129, .20);
+  background: #128C7E !important;
+  transform: translateY(-1px);
 }
 .main-header__number::before{
   content:'';
@@ -1310,6 +1474,38 @@ header.main-header nav.main-nav .main-nav__link--standout{
   color:#fff !important;
 }
 
+@media (min-width: 841px) {
+  nav.main-nav {
+    display: none !important;
+  }
+}
+
+@media (max-width: 840px) {
+  nav.main-nav {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    background: #fff;
+    border: 1px solid rgba(17,24,39,.1);
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.15);
+    padding: 12px;
+    overflow-y: auto;
+  }
+  nav.main-nav.trae-nav-open {
+    display: block !important;
+  }
+  nav.main-nav .main-nav__list {
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 8px;
+  }
+  nav.main-nav .main-nav__link {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
 :root{
   --cs-primary: #dc2626;
   --cs-primary-700: #b91c1c;
@@ -1347,10 +1543,28 @@ header.main-header nav.main-nav .main-nav__link--standout{
 .cs-card{
   grid-column: span 12;
   background:#fff;
-  border:1px solid rgba(17,24,39,.10);
+  border:2px solid #dc2626;
   border-radius:16px;
   padding:18px 18px 16px;
   box-shadow: 0 10px 24px rgba(0,0,0,.06);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.cs-card:hover {
+  box-shadow: 0 12px 30px rgba(220, 38, 38, 0.1);
+}
+.cs-card.cs-card--selected {
+  border-color: #25D366 !important;
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.2);
+}
+.cs-card__image{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 14px;
 }
 .cs-card__head{
   display:flex;
@@ -1367,41 +1581,62 @@ header.main-header nav.main-nav .main-nav__link--standout{
 .cs-card__price{
   font-weight:900;
   font-size:18px;
-  color: var(--cs-primary);
+  color: #dc2626;
+}
+.cs-card.cs-card--selected .cs-card__price {
+  color: #25D366;
 }
 .cs-card__list{
   margin:0 0 16px;
-  padding-left:18px;
+  padding:0;
   color:#111827;
   line-height:1.55;
+  list-style: none;
+}
+.cs-card__list li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 6px;
+}
+.cs-card__list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #dc2626;
+  font-weight: 900;
+}
+.cs-card.cs-card--selected .cs-card__list li::before {
+  color: #10b981;
 }
 .cs-card--featured{
-  border-color: rgba(220,38,38,.45);
-  box-shadow: 0 16px 40px rgba(220,38,38,.10);
+  transform: scale(1.02);
 }
 .cs-package__btn{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  padding:12px 16px;
+  padding:12px 20px;
   border-radius:999px;
   font-weight:900;
   letter-spacing:.2px;
   text-decoration:none !important;
-  background: rgba(17,24,39,.06);
-  border: 1px solid rgba(17,24,39,.12);
-  color:#111827 !important;
+  background: #dc2626 !important;
+  border: 1px solid #b91c1c !important;
+  color:#fff !important;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.2);
   transition: transform 140ms ease, box-shadow 140ms ease, background-color 140ms ease;
 }
-.cs-package__btn:hover{
-  background: rgba(17,24,39,.10);
-  transform: translateY(-1px);
-  box-shadow: 0 10px 22px rgba(0,0,0,.12);
+.cs-card.cs-card--selected .cs-package__btn {
+  background: #25D366 !important;
+  border-color: #128C7E !important;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
 }
-.cs-package__btn--primary{
-  background: linear-gradient(180deg, #dc2626 0%, #b91c1c 100%) !important;
-  border-color: rgba(220, 38, 38, .75) !important;
-  color:#fff !important;
+.cs-package__btn:hover{
+  transform: translateY(-1px);
+}
+.cs-card.cs-card--selected .cs-package__btn:hover {
+  background: #128C7E !important;
+  box-shadow: 0 10px 22px rgba(37, 211, 102, .25);
 }
 
 .cs-cart{
@@ -1506,25 +1741,90 @@ header.main-header nav.main-nav .main-nav__link--standout{
   background: rgba(17,24,39,.03);
 }
 .cs-pay{
-  display:grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap:12px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
 }
 .cs-pay__item{
-  grid-column: span 12;
-  border:1px solid rgba(17,24,39,.10);
-  border-radius:14px;
-  padding:14px;
-  background: rgba(17,24,39,.03);
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+.cs-pay__item:hover{
+  border-color: #25D366;
+  background: #f0fdf4;
+}
+.cs-pay__item.selected{
+  border-color: #25D366;
+  background: #f0fdf4;
+  box-shadow: 0 0 0 2px rgba(37, 211, 102, 0.2);
 }
 .cs-pay__title{
-  font-weight:900;
-  color:#111827;
-  margin-bottom:6px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #111827;
 }
-.cs-pay__text{
-  color:#111827;
-  opacity:.9;
+.cs-pay-placeholder{
+  padding: 32px;
+  text-align: center;
+  background: #f9fafb;
+  border: 1px dashed #d1d5db;
+  border-radius: 12px;
+  color: #6b7280;
+  font-style: italic;
+}
+.cs-pay-detail-card{
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  animation: pmSlideDown 0.3s ease;
+}
+@keyframes pmSlideDown{
+  from{opacity:0;transform:translateY(-8px);}
+  to{opacity:1;transform:translateY(0);}
+}
+.cs-tx-card{
+  background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+  border-radius: 16px;
+  padding: 24px;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.cs-tx-card__label{
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.cs-tx-card__input{
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  padding: 14px 16px;
+  color: #fff;
+  font-family: monospace;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+.cs-tx-card__input:focus{
+  outline: none;
+  border-color: #25D366;
+  background: rgba(255,255,255,0.08);
+}
+.cs-tx-card__help{
+  margin-top: 12px;
+  font-size: 13px;
+  color: #6b7280;
 }
 
 @media (min-width: 900px){
