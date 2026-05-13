@@ -1,0 +1,1066 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+<script>
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+</script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+	const gtm4wp_use_sku_instead = 0;
+	const gtm4wp_currency = 'USD';
+	const gtm4wp_product_per_impression = 10;
+	const gtm4wp_clear_ecommerce = false;
+	const gtm4wp_datalayer_max_timeout = 2000;
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><link rel="preload" as="font" type="font/woff2" href="https://pomcar.com/wp-content/themes/mt-pomcar-1.0.5/fonts/montserrat-600.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="https://pomcar.com/wp-content/themes/mt-pomcar-1.0.5/fonts/montserrat-800.woff2" crossorigin>
+
+	<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Packages - Pomcar</title>
+	<link rel="canonical" href="https://pomcar.com/packages/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Packages - Pomcar" />
+	<meta property="og:description" content="[...]Read More... from Packages" />
+	<meta property="og:url" content="https://pomcar.com/packages/" />
+	<meta property="og:site_name" content="Pomcar" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/pomcar.com\/packages\/","url":"https:\/\/pomcar.com\/packages\/","name":"Packages - Pomcar","isPartOf":{"@id":"https:\/\/pomcar.com\/#website"},"datePublished":"2024-12-12T07:53:25+00:00","breadcrumb":{"@id":"https:\/\/pomcar.com\/packages\/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https:\/\/pomcar.com\/packages\/"]}]},{"@type":"BreadcrumbList","@id":"https:\/\/pomcar.com\/packages\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/pomcar.com\/"},{"@type":"ListItem","position":2,"name":"Packages"}]},{"@type":"WebSite","@id":"https:\/\/pomcar.com\/#website","url":"https:\/\/pomcar.com\/","name":"Pomcar","description":"Peace of Mind in the Car Buying Process","publisher":{"@id":"https:\/\/pomcar.com\/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/pomcar.com\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https:\/\/pomcar.com\/#organization","name":"POMCAR LLC","url":"https:\/\/pomcar.com\/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/pomcar.com\/#\/schema\/logo\/image\/","url":"https:\/\/pomcar.com\/wp-content\/uploads\/2015\/02\/logo-color.png","contentUrl":"https:\/\/pomcar.com\/wp-content\/uploads\/2015\/02\/logo-color.png","width":600,"height":80,"caption":"POMCAR LLC"},"image":{"@id":"https:\/\/pomcar.com\/#\/schema\/logo\/image\/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.google.com' />
+<link rel='dns-prefetch' href='//maps.googleapis.com' />
+<link rel='dns-prefetch' href='//www.facebook.com' />
+<link rel='dns-prefetch' href='//www.gstatic.com' />
+<link href='https://maps.googleapis.com' crossorigin='anonymous' rel='preconnect' />
+<link href='https://connect.facebook.net' crossorigin='anonymous' rel='preconnect' />
+<link href='https://www.google.com' crossorigin='anonymous' rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Pomcar &raquo; Feed" href="https://pomcar.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Pomcar &raquo; Comments Feed" href="https://pomcar.com/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://pomcar.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpomcar.com%2Fpackages%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://pomcar.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpomcar.com%2Fpackages%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='stickylist-css' href='https://pomcar.com/wp-content/plugins/mt-gravity-forms-sticky-list-custom/css/sticky-list_styles.css?ver=6.9.4' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link rel='stylesheet' id='wc-blocks-style-css' href='https://pomcar.com/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-10.7.0' media='all' />
+
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--blue: #0d6efd;--wp--preset--color--indigo: #6610f2;--wp--preset--color--purple: #4c61aa;--wp--preset--color--pink: #e98f77;--wp--preset--color--red: #dc3545;--wp--preset--color--orange: #e3542f;--wp--preset--color--yellow: #ffc107;--wp--preset--color--green: #198754;--wp--preset--color--teal: #20c997;--wp--preset--color--cyan: #0dcaf0;--wp--preset--color--gray: #6c757d;--wp--preset--color--gray-dark: #343a40;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='cptch_stylesheet-css' href='https://pomcar.com/wp-content/plugins/captcha-bws/css/front_end_style.css?ver=5.2.8' media='all' />
+<link rel='stylesheet' id='cptch_desktop_style-css' href='https://pomcar.com/wp-content/plugins/captcha-bws/css/desktop_style.css?ver=5.2.8' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css' href='https://pomcar.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=10.7.0' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://pomcar.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=10.7.0' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='https://pomcar.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=10.7.0' media='all' />
+<style id='woocommerce-inline-inline-css'>
+.woocommerce form .form-row .required { visibility: visible; }
+/*# sourceURL=woocommerce-inline-inline-css */
+</style>
+<link rel='stylesheet' id='mt-pomcar-styles-css' href='https://pomcar.com/wp-content/themes/mt-pomcar-1.0.5/css/theme.min.css?ver=1.0.5.1777889445' media='all' />
+<script src="https://pomcar.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://pomcar.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="https://www.google.com/recaptcha/api.js" id="pomcar-google-recaptcha-js"></script>
+<script src="https://pomcar.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.10.7.0" id="wc-jquery-blockui-js" defer data-wp-strategy="defer"></script>
+<script id="wc-add-to-cart-js-extra">
+var wc_add_to_cart_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url":"/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https://pomcar.com/cart/","is_cart":"","cart_redirect_after_add":"yes"};
+//# sourceURL=wc-add-to-cart-js-extra
+</script>
+<script src="https://pomcar.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=10.7.0" id="wc-add-to-cart-js" defer data-wp-strategy="defer"></script>
+<script src="https://pomcar.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.10.7.0" id="wc-js-cookie-js" defer data-wp-strategy="defer"></script>
+<script id="woocommerce-js-extra">
+var woocommerce_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url":"/?wc-ajax=%%endpoint%%","i18n_password_show":"Show password","i18n_password_hide":"Hide password"};
+//# sourceURL=woocommerce-js-extra
+</script>
+<script src="https://pomcar.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=10.7.0" id="woocommerce-js" defer data-wp-strategy="defer"></script>
+<link rel="https://api.w.org/" href="https://pomcar.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://pomcar.com/wp-json/wp/v2/pages/32600" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://pomcar.com/xmlrpc.php?rsd" />
+<link rel='shortlink' href='https://pomcar.com/?p=32600' />
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- GTM Container placement set to automatic -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var dataLayer_content = {"pagePostType":"page","pagePostType2":"single-page","pagePostAuthor":"Johnny Appleseed","customerTotalOrders":0,"customerTotalOrderValue":0,"customerFirstName":"","customerLastName":"","customerBillingFirstName":"","customerBillingLastName":"","customerBillingCompany":"","customerBillingAddress1":"","customerBillingAddress2":"","customerBillingCity":"","customerBillingState":"","customerBillingPostcode":"","customerBillingCountry":"","customerBillingEmail":"","customerBillingEmailHash":"","customerBillingPhone":"","customerShippingFirstName":"","customerShippingLastName":"","customerShippingCompany":"","customerShippingAddress1":"","customerShippingAddress2":"","customerShippingCity":"","customerShippingState":"","customerShippingPostcode":"","customerShippingCountry":""};
+	dataLayer.push( dataLayer_content );
+</script>
+<script data-cfasync="false" data-pagespeed-no-defer>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-53DJFSH');
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-8S4BNTRH86"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+
+			function gtag() {
+				dataLayer.push( arguments );
+			}
+
+			gtag( 'js', new Date() );
+
+			gtag( 'config', 'G-8S4BNTRH86' );
+		</script>
+		<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Pomcar - Peace of Mind in the Car Buying Process">
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="https://pomcar.com/wp-content/uploads/2015/03/favi.png" sizes="32x32" />
+<link rel="icon" href="https://pomcar.com/wp-content/uploads/2015/03/favi.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://pomcar.com/wp-content/uploads/2015/03/favi.png" />
+<meta name="msapplication-TileImage" content="https://pomcar.com/wp-content/uploads/2015/03/favi.png" />
+<link rel='stylesheet' id='wc-stripe-blocks-checkout-style-css' href='https://pomcar.com/wp-content/plugins/woocommerce-gateway-stripe/build/upe-blocks.css?ver=f2371901e73cb7e29721' media='all' />
+<link rel='stylesheet' id='gwreadonly-css' href='https://pomcar.com/wp-content/plugins/gwreadonly/css/gwreadonly.css?ver=1.9.29' media='all' />
+<link rel='stylesheet' id='gform_basic-css' href='https://pomcar.com/wp-content/plugins/gravityforms/assets/css/dist/basic.min.css?ver=2.10.0' media='all' />
+<link rel='stylesheet' id='gform_theme_components-css' href='https://pomcar.com/wp-content/plugins/gravityforms/assets/css/dist/theme-components.min.css?ver=2.10.0' media='all' />
+<link rel='stylesheet' id='gform_theme-css' href='https://pomcar.com/wp-content/plugins/gravityforms/assets/css/dist/theme.min.css?ver=2.10.0' media='all' />
+
+</head>
+
+<body class="wp-singular page-template page-template-page-templates page-template-page-packages page-template-page-templatespage-packages-php page page-id-32600 wp-custom-logo wp-embed-responsive wp-theme-mt-pomcar-105 theme-mt-pomcar-1.0.5 woocommerce-no-js group-blog mt-pomcar-has-sidebar" itemscope itemtype="http://schema.org/WebSite">
+
+<!-- GTM Container placement set to automatic -->
+<!-- Google Tag Manager (noscript) -->
+				<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53DJFSH" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><div class="site" id="page">
+
+	<!-- ******************* The Navbar Area ******************* -->
+	<header id="wrapper-navbar" class="sticky-top bg-white">
+
+		<a class="skip-link visually-hidden-focusable" href="#content">
+			Skip to content		</a>
+
+		
+<nav id="main-nav" class="navbar navbar-expand-lg" aria-labelledby="main-nav-label">
+
+	<h2 id="main-nav-label" class="screen-reader-text">
+		Main Navigation	</h2>
+
+
+	<div class="container">
+
+		<!-- Your site branding in the menu -->
+		<a href="https://pomcar.com/" class="navbar-brand custom-logo-link" rel="home"><img width="300" height="40" src="https://pomcar.com/wp-content/uploads/2024/12/logo-color-300x40-1.png" class="img-fluid" alt="Pomcar" decoding="async" /></a>
+		<button
+			class="navbar-toggler"
+			type="button"
+			data-bs-toggle="offcanvas"
+			data-bs-target="#navbarNavOffcanvas"
+			aria-controls="navbarNavOffcanvas"
+			aria-expanded="false"
+			aria-label="Open menu"
+		>
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="offcanvas offcanvas-end bg-light" tabindex="-1" id="navbarNavOffcanvas">
+
+			<div class="offcanvas-header justify-content-end">
+				<button
+					class="btn-close text-reset"
+					type="button"
+					data-bs-dismiss="offcanvas"
+					aria-label="Close menu"
+				></button>
+			</div><!-- .offcancas-header -->
+
+			<!-- The WordPress Menu goes here -->
+			<div class="offcanvas-body"><ul id="main-menu" class="navbar-nav justify-content-end flex-grow-1 pe-3"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33417 nav-item"><a title="How it Works" href="https://pomcar.com/how-it-works/" class="nav-link">How it Works</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33418" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33418 nav-item"><a title="Why Us" href="https://pomcar.com/why-us/" class="nav-link">Why Us</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33419" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-32600 current_page_item active menu-item-33419 nav-item"><a title="Packages" href="https://pomcar.com/packages/" class="nav-link" aria-current="page">Packages</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33420" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33420 nav-item"><a title="About" href="https://pomcar.com/about-us/" class="nav-link">About</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33421 nav-item"><a title="Join" href="https://pomcar.com/join/" class="nav-link">Join</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33423" class="btn btn-primary menu-item menu-item-type-custom menu-item-object-custom menu-item-33423 nav-item"><a title="Get Started" href="/inspection-request" class="nav-link">Get Started</a></li>
+</ul></div>		</div><!-- .offcanvas -->
+
+		<div class="navbar-border"></div>
+
+	</div><!-- .container(-fluid) -->
+
+</nav><!-- #main-nav -->
+
+	</header><!-- #wrapper-navbar -->
+<section class="section hero-style-3 d-flex flex-column-reverse d-sm-block bg-primary">
+	<div class="half-rounded-img right">
+		<img src="https://pomcar.com/wp-content/themes/mt-pomcar-1.0.5/img/family-with-kids-happy-in-car.jpg" alt="" class="">	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-7 col-md-6 vh-65 d-flex text-white py-5">
+				<div class="inner">
+						<h1 class="my-5 fs-xl">Vehicle Inspection Packages</h1>
+
+	<h2 class="fw-semibold mb-5 fs-4">Whether this is your first car or
+		<span class="d-none d-lg-block"></span>twentieth, no one wants to be stuck
+		<span class="d-none d-lg-block"></span>with a “lemon”.
+		<br><br>
+		<span class="d-none d-lg-block"></span>Hire a company you can trust to
+		<span class="d-none d-lg-block"></span>perform a vehicle inspection before
+		<span class="d-none d-lg-block"></span>you buy.</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section get-started">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 pb-0 py-4 py-lg-5">
+				<div class="section-inner text-center py-3">
+					<h3 class="text-secondary">Get Started</h3>
+					<h2 class="text-primary fs-1 mb-5">Vehicle Inspection Packages</h2>
+					<p class="w-lg-50 mx-auto mb-5">All POMCAR vehicle inspection packages include a 270-point inspection and road test (provided vehicle is road worthy and seller/dealer allows for one). <br><strong>The best package for you depends on the vehicle to be inspected.</strong></p>
+
+					<div class="package-grid pt-lg-5">
+													<div class="package d-flex ">
+																<div class="package-inner d-flex flex-column justify-content-between rounded-2 bg-light overflow-hidden">
+									<div class="overflow-hidden package-image rounded-2">
+										<img src="https://pomcar.com/wp-content/themes/mt-pomcar-1.0.5/img/mechanic/check-inside-480.jpg" alt="Starter" class="" width="720" height="480" loading="lazy">									</div>
+									<div class="package-content d-flex flex-column flex-grow-1 align-items-center p-4 pb-5 p-lg-5">
+										<h3 class="package-title text-primary">Starter</h3>
+										<h5 class="package-price text-secondary mb-4">
+											$180										</h5>
+										<div class="package-details flex-grow-1 mb-4">
+											<p><strong>Vehicles 1995 and up. <br>Where no fluid check required.</strong></p>
+		<p>Includes our 270-point inspection and up to three focus areas of your choosing.</p>										</div>
+										<a href="https://pomcar.com/inspection-request"
+											class="btn btn-secondary btn-lg btn-block"><i class="fa-solid fa-car-wrench"></i> ORDER
+											NOW</a>
+									</div>
+								</div>
+							</div>
+													<div class="package d-flex ">
+																<div class="package-inner d-flex flex-column justify-content-between rounded-2 bg-light overflow-hidden">
+									<div class="overflow-hidden package-image rounded-2">
+										<img src="https://pomcar.com/wp-content/themes/mt-pomcar-1.0.5/img/mechanic/checking-fluid-480.jpg" alt="Experienced" class="" width="720" height="480" loading="lazy">									</div>
+									<div class="package-content d-flex flex-column flex-grow-1 align-items-center p-4 pb-5 p-lg-5">
+										<h3 class="package-title text-primary">Experienced</h3>
+										<h5 class="package-price text-secondary mb-4">
+											$185										</h5>
+										<div class="package-details flex-grow-1 mb-4">
+											<p><strong>Vehicles 1995 and older. <br>When no onboard diagnostics scan available.</strong></p>
+		<p>Includes Starter Package and a check of all fluid levels. The fluid levels help determine whether a vehicle has been properly maintained and how long it has been sitting idle.</p>										</div>
+										<a href="https://pomcar.com/inspection-request"
+											class="btn btn-secondary btn-lg btn-block"><i class="fa-solid fa-car-wrench"></i> ORDER
+											NOW</a>
+									</div>
+								</div>
+							</div>
+													<div class="package d-flex highlight">
+																	<div class="package-highlight bg-primary rounded-2">
+										<div class="text-white p-2 small">MOST POPULAR</div>
+									</div>
+																<div class="package-inner d-flex flex-column justify-content-between rounded-2 bg-light overflow-hidden">
+									<div class="overflow-hidden package-image rounded-2">
+										<img src="https://pomcar.com/wp-content/themes/mt-pomcar-1.0.5/img/mechanic/scan-1-480.jpg" alt="Professional" class="" width="720" height="480" loading="lazy">									</div>
+									<div class="package-content d-flex flex-column flex-grow-1 align-items-center p-4 pb-5 p-lg-5">
+										<h3 class="package-title text-primary">Professional</h3>
+										<h5 class="package-price text-secondary mb-4">
+											$195										</h5>
+										<div class="package-details flex-grow-1 mb-4">
+											<p><strong>Vehicles 1996 and newer. <br>Those equipped with OBD-II systems. Checks for active or stored codes.</strong></p>
+		<p>Includes Experienced Package, plus an OBD-II scan of the onboard computer to reveal any active trouble codes that should be addressed immediately.</p>										</div>
+										<a href="https://pomcar.com/inspection-request"
+											class="btn btn-secondary btn-lg btn-block"><i class="fa-solid fa-car-wrench"></i> ORDER
+											NOW</a>
+									</div>
+								</div>
+							</div>
+											</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section text-se-border-arrows bg-secondary py-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 py-4 py-lg-5">
+					<div class="d-flex align-items-center justify-content-center flex-column flex-lg-row gap-5 text-white">
+		<div>
+			<i class="fa-thin fa-bullseye-arrow fa-7x"></i>
+		</div>
+		<div class="text-center text-lg-start">
+			<h3>Determine Your Focus Areas</h3>
+			<p class="fs-4 mb-0">Is there something in the vehicle advertisement you want to investigate?<br>
+				Did the seller make a comment that you want to confirm or do you just <span class="d-none d-xl-block"></span>need reassurance you are making a solid purchase decision? Let us
+				know.</p>
+		</div>
+	</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section 270-points-performed bg-white py-5">
+	<div class="white-down-arrow center"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 pb-md-4 pt-md-5">
+				<div class="section-inner">
+					<div class="text-center mb-5">
+						<h2 class="text-primary fs-1">270-Points Performed</h2>
+					</div>
+					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
+													<div class="col d-flex">
+								<div class="inspection-point d-flex flex-column text-white bg-primary rounded-2">
+									<div class="d-flex flex-column align-items-center justify-content-center flex-grow-1 text-center p-5">
+										<h4>Verification</h4>
+										<p>To start, vehicle details as advertised are confirmed to include color, VIN, and reported mileage.</p>
+									</div>
+									<div class="border-top border-light bg-dark rounded-bottom p-4">
+										<div class="text-pink d-flex justify-content-between align-items-center cursor-pointer"
+											data-bs-toggle="collapse"
+											data-bs-target="#expand-0"
+											aria-expanded="false"
+											aria-controls="expand-0">
+											15 Point Checks											<i class="fa-solid fa-chevron-down text-white rotate"></i>
+										</div>
+										<div class="collapse" id="expand-0">
+											<ul class="list-group list-group-flush mt-3">
+																									<li class="list-group-item border-light bg-dark text-white">VIN Check on dash, doors, hood, trunk</li>
+																									<li class="list-group-item border-light bg-dark text-white">Confirm vehicle as advertised (Year, Make, Model, Trim Engine, Transmission, Exterior Color, Interior Color)</li>
+																									<li class="list-group-item border-light bg-dark text-white">Odometer Reading</li>
+																									<li class="list-group-item border-light bg-dark text-white">Presence of Owner’s Manual</li>
+																									<li class="list-group-item border-light bg-dark text-white">Service History Check</li>
+																									<li class="list-group-item border-light bg-dark text-white">Maintenance Record Check</li>
+																									<li class="list-group-item border-light bg-dark text-white">Presence of CARFAX Report</li>
+																									<li class="list-group-item border-light bg-dark text-white"># of Ignition Keys</li>
+																									<li class="list-group-item border-light bg-dark text-white"># of FOBs</li>
+																									<li class="list-group-item border-light bg-dark text-white"># of Glove /box Keys</li>
+																							</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+													<div class="col d-flex">
+								<div class="inspection-point d-flex flex-column text-white bg-primary rounded-2">
+									<div class="d-flex flex-column align-items-center justify-content-center flex-grow-1 text-center p-5">
+										<h4>Tires &amp; Brakes</h4>
+										<p>Each tire, including the spare, checked for size, brand, and tread depth. Brake pad wear is also measured for your safety.</p>
+									</div>
+									<div class="border-top border-light bg-dark rounded-bottom p-4">
+										<div class="text-pink d-flex justify-content-between align-items-center cursor-pointer"
+											data-bs-toggle="collapse"
+											data-bs-target="#expand-1"
+											aria-expanded="false"
+											aria-controls="expand-1">
+											52 Point Checks											<i class="fa-solid fa-chevron-down text-white rotate"></i>
+										</div>
+										<div class="collapse" id="expand-1">
+											<ul class="list-group list-group-flush mt-3">
+																									<li class="list-group-item border-light bg-dark text-white">Wiggle Test for excess movement in the steering linkage and ball joints</li>
+																									<li class="list-group-item border-light bg-dark text-white">Tire Characteristics (Brand, Model, Class, Width, Aspect Ratio, Construction, Diameter, Speed Rating)</li>
+																									<li class="list-group-item border-light bg-dark text-white">Presence of Valve Cap Stem</li>
+																									<li class="list-group-item border-light bg-dark text-white">Presence and condition of the wheel cover, hub cap, or center cap</li>
+																									<li class="list-group-item border-light bg-dark text-white">Presence and condition of mud flaps and wind deflectors (if equipped)</li>
+																									<li class="list-group-item border-light bg-dark text-white">Condition of the wheel, such as scratches, dents, corrosion, and presence of lugnuts and wheel locks</li>
+																									<li class="list-group-item border-light bg-dark text-white">Shocks &amp; Struts - bounce test of the shock absorber</li>
+																									<li class="list-group-item border-light bg-dark text-white">Condition of the pads, caliper, and rotor</li>
+																									<li class="list-group-item border-light bg-dark text-white">Tire Tread Depth (Inboard, Center, Outboard)</li>
+																									<li class="list-group-item border-light bg-dark text-white">Brake Pad Thickness</li>
+																							</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+													<div class="col d-flex">
+								<div class="inspection-point d-flex flex-column text-white bg-primary rounded-2">
+									<div class="d-flex flex-column align-items-center justify-content-center flex-grow-1 text-center p-5">
+										<h4>Exterior &amp; Undercarriage</h4>
+										<p>All panels checked for evidence of dings, dents, and scratches. Underbody inspected for any signs of damage.</p>
+									</div>
+									<div class="border-top border-light bg-dark rounded-bottom p-4">
+										<div class="text-pink d-flex justify-content-between align-items-center cursor-pointer"
+											data-bs-toggle="collapse"
+											data-bs-target="#expand-2"
+											aria-expanded="false"
+											aria-controls="expand-2">
+											94 Point Checks											<i class="fa-solid fa-chevron-down text-white rotate"></i>
+										</div>
+										<div class="collapse" id="expand-2">
+											<ul class="list-group list-group-flush mt-3">
+																									<li class="list-group-item border-light bg-dark text-white">Presence of accessories that would have been installed after purchase, whether aftermarket or factory</li>
+																									<li class="list-group-item border-light bg-dark text-white">Presence of non-OEM parts, such as non-factory wheels or fog lights and their condition</li>
+																									<li class="list-group-item border-light bg-dark text-white">All doors and check straps for damage and proper alignment</li>
+																									<li class="list-group-item border-light bg-dark text-white">Doors seals, door locks</li>
+																									<li class="list-group-item border-light bg-dark text-white">Side-view mirrors</li>
+																									<li class="list-group-item border-light bg-dark text-white">Condition of the window glass and belt molding, as well as non-OE tinting</li>
+																									<li class="list-group-item border-light bg-dark text-white">Condition of the door handle, physically and operationally</li>
+																									<li class="list-group-item border-light bg-dark text-white">Condition of door trim pieces or garnishes</li>
+																									<li class="list-group-item border-light bg-dark text-white">Condition of door rocker panel</li>
+																									<li class="list-group-item border-light bg-dark text-white">Roof</li>
+																									<li class="list-group-item border-light bg-dark text-white">Rack Rails</li>
+																									<li class="list-group-item border-light bg-dark text-white">Sunroof</li>
+																									<li class="list-group-item border-light bg-dark text-white">Fender/Liner</li>
+																									<li class="list-group-item border-light bg-dark text-white">Front Grille</li>
+																									<li class="list-group-item border-light bg-dark text-white">Front Hood</li>
+																									<li class="list-group-item border-light bg-dark text-white">Trunk Lid/Tailgate</li>
+																									<li class="list-group-item border-light bg-dark text-white">Bed Liner &amp; Cover</li>
+																									<li class="list-group-item border-light bg-dark text-white">Bumper / Spoiler</li>
+																									<li class="list-group-item border-light bg-dark text-white">Exhaust &amp; Tailgate</li>
+																									<li class="list-group-item border-light bg-dark text-white">Gas Cap</li>
+																									<li class="list-group-item border-light bg-dark text-white">GPS Antenna</li>
+																							</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+													<div class="col d-flex">
+								<div class="inspection-point d-flex flex-column text-white bg-primary rounded-2">
+									<div class="d-flex flex-column align-items-center justify-content-center flex-grow-1 text-center p-5">
+										<h4>Electrical &amp; Lights</h4>
+										<p>Any instrument that relies upon battery power is examined to ensure proper and reliable function.</p>
+									</div>
+									<div class="border-top border-light bg-dark rounded-bottom p-4">
+										<div class="text-pink d-flex justify-content-between align-items-center cursor-pointer"
+											data-bs-toggle="collapse"
+											data-bs-target="#expand-3"
+											aria-expanded="false"
+											aria-controls="expand-3">
+											44 Point Checks											<i class="fa-solid fa-chevron-down text-white rotate"></i>
+										</div>
+										<div class="collapse" id="expand-3">
+											<ul class="list-group list-group-flush mt-3">
+																									<li class="list-group-item border-light bg-dark text-white">Lights – headlights, marker lights, low beams, high beams, fog lights, turn signals, brake lights, hazards</li>
+																									<li class="list-group-item border-light bg-dark text-white">Operation of all mirrors</li>
+																									<li class="list-group-item border-light bg-dark text-white">Operation of all windows</li>
+																									<li class="list-group-item border-light bg-dark text-white">Operation of all window wipers</li>
+																									<li class="list-group-item border-light bg-dark text-white">Operation of all defoggers</li>
+																									<li class="list-group-item border-light bg-dark text-white">Instrument Cluster Function</li>
+																									<li class="list-group-item border-light bg-dark text-white">Horn Function</li>
+																									<li class="list-group-item border-light bg-dark text-white">Ignition Key Function and Engine Start</li>
+																									<li class="list-group-item border-light bg-dark text-white">Dashboard Backlighting</li>
+																									<li class="list-group-item border-light bg-dark text-white">Operation of dome lights, map lights, and vanity lights</li>
+																									<li class="list-group-item border-light bg-dark text-white">Daytime Running Lamps</li>
+																									<li class="list-group-item border-light bg-dark text-white">Remote starter operation (if equipped)</li>
+																									<li class="list-group-item border-light bg-dark text-white">Sunroof/Moonroof operation (if equipped)</li>
+																									<li class="list-group-item border-light bg-dark text-white">Operation of the HVAC system, including air distribution, heating, cooling, and air conditioning</li>
+																									<li class="list-group-item border-light bg-dark text-white">SRS/Airbag System Functionality</li>
+																									<li class="list-group-item border-light bg-dark text-white">Power socket/cigarette lighter function</li>
+																									<li class="list-group-item border-light bg-dark text-white">KOER Light Test</li>
+																							</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+													<div class="col d-flex">
+								<div class="inspection-point d-flex flex-column text-white bg-primary rounded-2">
+									<div class="d-flex flex-column align-items-center justify-content-center flex-grow-1 text-center p-5">
+										<h4>Interior</h4>
+										<p>Cabin appearance evaluated and interior leather, fabric, carpet, vinyl, and plastic trim and surfaces checked for evidence of rips, tears, wear, and fading.</p>
+									</div>
+									<div class="border-top border-light bg-dark rounded-bottom p-4">
+										<div class="text-pink d-flex justify-content-between align-items-center cursor-pointer"
+											data-bs-toggle="collapse"
+											data-bs-target="#expand-4"
+											aria-expanded="false"
+											aria-controls="expand-4">
+											30 Point Checks											<i class="fa-solid fa-chevron-down text-white rotate"></i>
+										</div>
+										<div class="collapse" id="expand-4">
+											<ul class="list-group list-group-flush mt-3">
+																									<li class="list-group-item border-light bg-dark text-white">Seat condition, adjustment operation, heat function (if equipped)</li>
+																									<li class="list-group-item border-light bg-dark text-white">Presence of odors or stains</li>
+																									<li class="list-group-item border-light bg-dark text-white">Condition and operation of seat belts and buckles</li>
+																									<li class="list-group-item border-light bg-dark text-white">Condition of the pedals and pedal covers, including the accelerator, brake, clutch, and parking brake</li>
+																									<li class="list-group-item border-light bg-dark text-white">Condition of the shift lever, including the knob, bezel, and cover or boot</li>
+																									<li class="list-group-item border-light bg-dark text-white">Floors and carpets</li>
+																									<li class="list-group-item border-light bg-dark text-white">Seatbelt Warning</li>
+																									<li class="list-group-item border-light bg-dark text-white">Engine noise, vibration, or harshness</li>
+																									<li class="list-group-item border-light bg-dark text-white">Parking brake condition and operation</li>
+																							</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+													<div class="col d-flex">
+								<div class="inspection-point d-flex flex-column text-white bg-primary rounded-2">
+									<div class="d-flex flex-column align-items-center justify-content-center flex-grow-1 text-center p-5">
+										<h4>Engine</h4>
+										<p>Critical components such as belts and hoses are examined. Battery is tested (except for hybrids and electrics) and a voltage reading is obtained.</p>
+									</div>
+									<div class="border-top border-light bg-dark rounded-bottom p-4">
+										<div class="text-pink d-flex justify-content-between align-items-center cursor-pointer"
+											data-bs-toggle="collapse"
+											data-bs-target="#expand-5"
+											aria-expanded="false"
+											aria-controls="expand-5">
+											15 Point Checks											<i class="fa-solid fa-chevron-down text-white rotate"></i>
+										</div>
+										<div class="collapse" id="expand-5">
+											<ul class="list-group list-group-flush mt-3">
+																									<li class="list-group-item border-light bg-dark text-white">Functional Gas Cap</li>
+																									<li class="list-group-item border-light bg-dark text-white">Verify proper operation of the trunk lid release, via button or lever inside, as well as via key FOB (if equipped)</li>
+																									<li class="list-group-item border-light bg-dark text-white">Operation of the hood release and the primary and secondary hood latches</li>
+																									<li class="list-group-item border-light bg-dark text-white">Engine Air Filter Condition</li>
+																									<li class="list-group-item border-light bg-dark text-white">Accessory Drive Belts</li>
+																									<li class="list-group-item border-light bg-dark text-white">Condition of any visible wiring harnesses, fuse and relay boxes</li>
+																									<li class="list-group-item border-light bg-dark text-white">Battery Voltage Reading (at rest and while running)</li>
+																							</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+													<div class="col d-flex">
+								<div class="inspection-point d-flex flex-column text-white bg-primary rounded-2">
+									<div class="d-flex flex-column align-items-center justify-content-center flex-grow-1 text-center p-5">
+										<h4>Road Test</h4>
+										<p>Engine performance, wind noise, alignment, speedometer/odometer function, and braking performance examined.</p>
+									</div>
+									<div class="border-top border-light bg-dark rounded-bottom p-4">
+										<div class="text-pink d-flex justify-content-between align-items-center cursor-pointer"
+											data-bs-toggle="collapse"
+											data-bs-target="#expand-6"
+											aria-expanded="false"
+											aria-controls="expand-6">
+											13 Point Checks											<i class="fa-solid fa-chevron-down text-white rotate"></i>
+										</div>
+										<div class="collapse" id="expand-6">
+											<ul class="list-group list-group-flush mt-3">
+																									<li class="list-group-item border-light bg-dark text-white">Security &amp; Remote check</li>
+																									<li class="list-group-item border-light bg-dark text-white">Proper engine operation, smooth idle, good acceleration, stable cruising speed</li>
+																									<li class="list-group-item border-light bg-dark text-white">Operation of transmission</li>
+																									<li class="list-group-item border-light bg-dark text-white">Operation of the transfer case, locking differentials, or other 4x4 / AWD related controls (if equipped)</li>
+																									<li class="list-group-item border-light bg-dark text-white">Operation of the cruise control system</li>
+																									<li class="list-group-item border-light bg-dark text-white">Brake System Function</li>
+																									<li class="list-group-item border-light bg-dark text-white">Steering Operation</li>
+																									<li class="list-group-item border-light bg-dark text-white">Noise, Vibrations, Harshness</li>
+																									<li class="list-group-item border-light bg-dark text-white">Suspension Check</li>
+																									<li class="list-group-item border-light bg-dark text-white">Cooling Fan Operation post-drive</li>
+																							</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+													<div class="col d-flex">
+								<div class="inspection-point d-flex flex-column text-white bg-primary rounded-2">
+									<div class="d-flex flex-column align-items-center justify-content-center flex-grow-1 text-center p-5">
+										<h4>Fluid Checks*</h4>
+										<p>Oil, brake, clutch, transmission, and power steering fluid levels checked among others.</p>
+									</div>
+									<div class="border-top border-light bg-dark rounded-bottom p-4">
+										<div class="text-pink d-flex justify-content-between align-items-center cursor-pointer"
+											data-bs-toggle="collapse"
+											data-bs-target="#expand-7"
+											aria-expanded="false"
+											aria-controls="expand-7">
+											5 Point Checks											<i class="fa-solid fa-chevron-down text-white rotate"></i>
+										</div>
+										<div class="collapse" id="expand-7">
+											<ul class="list-group list-group-flush mt-3">
+																									<li class="list-group-item border-light bg-dark text-white">Engine Oil</li>
+																									<li class="list-group-item border-light bg-dark text-white">Transmission Fluid</li>
+																									<li class="list-group-item border-light bg-dark text-white">Engine Coolant</li>
+																									<li class="list-group-item border-light bg-dark text-white">Brake &amp; Clutch Fluid</li>
+																									<li class="list-group-item border-light bg-dark text-white">Washer Fluid</li>
+																							</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+													<div class="col d-flex">
+								<div class="inspection-point d-flex flex-column text-white bg-primary rounded-2">
+									<div class="d-flex flex-column align-items-center justify-content-center flex-grow-1 text-center p-5">
+										<h4>Diagnostic Scan*</h4>
+										<p>Scan performed to confirm VIN and report error codes if present.</p>
+									</div>
+									<div class="border-top border-light bg-dark rounded-bottom p-4">
+										<div class="text-pink d-flex justify-content-between align-items-center cursor-pointer"
+											data-bs-toggle="collapse"
+											data-bs-target="#expand-8"
+											aria-expanded="false"
+											aria-controls="expand-8">
+											2 Point Checks											<i class="fa-solid fa-chevron-down text-white rotate"></i>
+										</div>
+										<div class="collapse" id="expand-8">
+											<ul class="list-group list-group-flush mt-3">
+																									<li class="list-group-item border-light bg-dark text-white">VIN Confirmation</li>
+																									<li class="list-group-item border-light bg-dark text-white">Presence of Diagnostic Trouble Codes (DTCs)</li>
+																							</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+											</div>
+					<div class="text-center mt-5 mb-0">
+						<p>*Additional checks depending on package selection and availability</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section information-needed bg-light py-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 d-flex align-items-center py-5">
+				<div class="section-inner">
+					<div class="text-center">
+						<h2 class="h1 text-primary">Information Needed</h2>
+						<p class="mb-5">When you’re ready to request your car inspection package, you will need the following:</p>
+					</div>
+					<div class="row row-cols-1 row-cols-sm-2 g-2">
+
+													<div class="col d-flex-inline flex-column">
+								<div class="bg-white shadow rounded-3 px-3 py-5 h-100 d-flex flex-column align-items-center text-center">
+									<h5 class="text-secondary mb-4">Vehicle Identification Number (VIN)</h5>
+									<p>The 17-character VIN is usually found at the bottom of the front windshield. Be sure to get this information from the seller or when you view the vehicle yourself.</p>
+								</div>
+							</div>
+													<div class="col d-flex-inline flex-column">
+								<div class="bg-white shadow rounded-3 px-3 py-5 h-100 d-flex flex-column align-items-center text-center">
+									<h5 class="text-secondary mb-4">Vehicle Address</h5>
+									<p>The location the vehicle is determines where an inspection will take place. If POMCAR doesn’t have a technician qualified to inspect your vehicle in your area, we will let you know right away.</p>
+								</div>
+							</div>
+													<div class="col d-flex-inline flex-column">
+								<div class="bg-white shadow rounded-3 px-3 py-5 h-100 d-flex flex-column align-items-center text-center">
+									<h5 class="text-secondary mb-4">Seller Phone Number</h5>
+									<p>You don’t have to be in the middle. POMCAR will coordinate directly with the seller to schedule the inspection.</p>
+								</div>
+							</div>
+													<div class="col d-flex-inline flex-column">
+								<div class="bg-white shadow rounded-3 px-3 py-5 h-100 d-flex flex-column align-items-center text-center">
+									<h5 class="text-secondary mb-4">Your Focus Areas</h5>
+									<p>If you have specific concerns about the vehicle, let us know. You can identify up to three focus areas for our technicians to address.</p>
+								</div>
+							</div>
+						
+					</div>
+					<div class="text-center mt-5">
+						<h3 class="text-primary">Not sure what package you need?</h3>
+						<p class="fs-3">Contact us below and we can discuss options.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="contact" class="section contact white-top-border">
+	<div class="bg-img">
+		<img src="https://pomcar.com/wp-content/themes/mt-pomcar-1.0.5/img/blue-car.jpg" alt="" class="" loading="lazy">	</div>
+	<div class="container position-relative pb-lg-5 pt-5">
+					<div class="white-down-arrow"></div>
+				<div class="row">
+			<div class="col-12 vh-75 d-flex align-items-center py-lg-5">
+				<div class="section-inner py-5">
+					<div class="b1 text-white">
+						<h2 class="h1 mb-5">Contact Us</h2>
+						<p class="fs-5 mb-4">Do you have questions? <br>We love to respond!</p>
+						<p class="fs-5 mb-4">Visit our <a href="https://pomcar.com/faq"
+															class="text-pink text-hover-secondary">FAQs</a> or complete
+							our
+							Contact Form.
+						</p>
+					</div>
+					<div class="b2 pt-5 pt-lg-0">
+						
+                <div class='gf_browser_chrome gform_wrapper gravity-theme gform-theme--no-framework contact-us-form_wrapper form_wrapper' data-form-theme='gravity-theme' data-form-index='0' id='gform_wrapper_25' >
+                        <div class='gform_heading'>
+                            <p class='gform_description'></p>
+							<p class='gform_required_legend'>&quot;<span class="gfield_required gfield_required_asterisk">*</span>&quot; indicates required fields</p>
+                        </div><form method='post' enctype='multipart/form-data'  id='gform_25' class='contact-us-form form' action='/packages/' data-formid='25' novalidate novalidate="novalidate">
+                        <div class='gform-body gform_body'><div id='gform_fields_25' class='gform_fields top_label form_sublabel_below description_below validation_below'><div id="field_25_9" class="gfield gfield--type-text gfield--input-type-text half form-group gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_25_9'>First Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_9' id='input_25_9' type='text' value='' class='medium'   tabindex='1000' placeholder='First Name' aria-required="true" aria-invalid="false"   /></div></div><div id="field_25_14" class="gfield gfield--type-text gfield--input-type-text gfield--width-full half form-group gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_25_14'>Last Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_14' id='input_25_14' type='text' value='' class='medium'   tabindex='1001' placeholder='Last Name' aria-required="true" aria-invalid="false"   /></div></div><div id="field_25_11" class="gfield gfield--type-email gfield--input-type-email half form-group gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_25_11'>Email<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_11' id='input_25_11' type='email' value='' class='medium' tabindex='1002'  placeholder='Email' aria-required="true" aria-invalid="false"  />
+                        </div></div><div id="field_25_15" class="gfield gfield--type-select gfield--input-type-select gfield--width-full half form-group gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_25_15'>Customer or Tech?<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_15' id='input_25_15' class='medium gfield_select' tabindex='1003'   aria-required="true" aria-invalid="false" ><option value='' selected='selected' class='gf_placeholder'>Customer or Tech?</option><option value='Customer' >Customer</option><option value='Technician' >Technician</option></select></div></div><div id="field_25_12" class="gfield gfield--type-textarea gfield--input-type-textarea field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_25_12'>Message</label><div class='ginput_container ginput_container_textarea'><textarea name='input_12' id='input_25_12' class='textarea medium' tabindex='1004'   placeholder='Message'  aria-invalid="false"   rows='10' cols='50'></textarea></div></div><div id="field_25_16" class="gfield gfield--type-captcha gfield--input-type-captcha gfield--width-full field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label screen-reader-text' for='input_25_16'></label><div id='input_25_16' class='ginput_container ginput_recaptcha' data-sitekey='6Ldr45sqAAAAAIswqXjnrkostvULulNfbWHbNDoc'  data-theme='light' data-tabindex='1005'  data-badge=''></div></div></div></div>
+        <div class='gform-footer gform_footer top_label'> <input type='submit' id='gform_submit_button_25' class='gform_button button' onclick='gform.submission.handleButtonClick(this);' data-submission-type='submit' value='Submit' tabindex='1006' /> 
+            <input type='hidden' class='gform_hidden' name='gform_submission_method' data-js='gform_submission_method_25' value='postback' />
+            <input type='hidden' class='gform_hidden' name='gform_theme' data-js='gform_theme_25' id='gform_theme_25' value='gravity-theme' />
+            <input type='hidden' class='gform_hidden' name='gform_style_settings' data-js='gform_style_settings_25' id='gform_style_settings_25' value='[]' />
+            <input type='hidden' class='gform_hidden' name='is_submit_25' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='25' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_currency' data-currency='USD' value='DWlSjalnjoY76y1qC/eAl8CQlBLtI4j2TiA/WG648ttQIrXYy4tdg8fJvhu+CwzgtxP/SygWeDg0x4UrVm8twIMZNmNCz+ikypDaGcoCThpS/AM=' />
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_25' value='WyJ7XCIxNVwiOltcIjA0OTNlODZhMmY1ZWMxMGYwOWMxNTRkODJmMDA0NDg1XCIsXCI0ZDAxNTYwNjMzM2Q3MWVmMTJjNjk2ZGViYWE4ZDBlMFwiXX0iLCI3Mjk4NDY0YWFhZjgzZTAwMmRlYzFmOGYxNjg0NjA2YSJd' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_25' id='gform_target_page_number_25' value='0' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_25' id='gform_source_page_number_25' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script>
+gform.initializeOnLoaded( function() {gformInitSpinner( 25, 'https://pomcar.com/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery('#gform_ajax_frame_25').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_25');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_25').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_25').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_25').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_25').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */  }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_25').val();gformInitSpinner( 25, 'https://pomcar.com/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery(document).trigger('gform_page_loaded', [25, current_page]);window['gf_submitting_25'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_25').replaceWith(confirmation_content);jQuery(document).trigger('gform_confirmation_loaded', [25]);window['gf_submitting_25'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_25').text());}else{jQuery('#gform_25').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "25", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_25" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_25";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_25" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 25, current_page );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} );
+</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- ******************* The Footer Full-width Widget Area ******************* -->
+
+<div class="wrapper bg-dark" id="wrapper-footer-full" role="complementary">
+	<div class="container py-4" id="footer-full-content" tabindex="-1">
+		<div class="row">
+			<div class="col-12">
+				<div class="footer-full-inner d-flex gap-4 gap-sm-5 flex-wrap justify-content-between">
+					<div class="b1">
+						<img src="https://pomcar.com/wp-content/themes/mt-pomcar-1.0.5/img/logo.png" alt="POMCAR LLC logo" class="" width="250" height="0" loading="lazy">						<p class="fs-5 mt-3 text-white">Your Best Solution for a <br>Used Vehicle Inspection</p>
+					</div>
+					<div class="b2">
+						<p class="text-white mb-2">Quick Links:</p><ul class="footer-menu"><li class="mb-2"><a class=""  href="https://pomcar.com/">Homepage</a></li><li class="mb-2"><a class="" data-bs-toggle="modal" data-bs-target="#pomcar-login-modal" href="#">Technician Login</a></li><li class="mb-2"><a class=""  href="https://pomcar.com/blog/">Blog</a></li><li class="mb-2"><a class=""  href="https://pomcar.com/faq/">FAQ</a></li></ul>					</div>
+					<div class="b3">
+						<ul class="footer-menu"><li class="mb-2"><a href="https://pomcar.com/contact-us/">Contact Us</a></li><li class="mb-2"><a href="https://pomcar.com/privacy-policy/">Privacy Policy</a></li><li class="mb-2"><a href="https://pomcar.com/terms/">Terms &#038; Conditions</a></li></ul>					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!-- #wrapper-footer-full -->
+
+<div class="wrapper bg-primary" id="wrapper-footer">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<footer class="site-footer" id="colophon">
+					<div class="site-info text-center text-white">
+						2026 © POMCAR LLC. All Rights Reserved					</div><!-- .site-info -->
+				</footer><!-- #colophon -->
+			</div><!-- col -->
+		</div><!-- .row -->
+	</div><!-- .container(-fluid) -->
+</div><!-- #wrapper-footer -->
+
+</div><!-- #page -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/mt-pomcar-1.0.5/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+		<div id="sf-pomcar-messages" class="alert-wrapper col-sm-12" style="display: none;">
+					</div>
+		<script>
+			jQuery( document ).ready( function ( $ ) {
+				if ( jQuery( "#sf-pomcar-messages" ).has( ".alert" ) ) {
+					jQuery( "#sf-pomcar-messages" ).fadeIn();
+				}
+				jQuery( '#sf-pomcar-messages .alert-close' ).on( 'click', function ( e ) {
+					e.preventDefault();
+					jQuery( this ).closest( '.alert' ).fadeOut();
+				} );
+			} );
+		</script>
+				<button id="mt-pomcar-back-to-top" class="mt-pomcar-back-to-top" aria-label="Back to top">
+			<i class="fa fa-chevron-up"></i>
+		</button>
+				<!-- Facebook Pixel Code -->
+		<script>
+			!function (f, b, e, v, n, t, s) {
+				if (f.fbq) return;
+				n = f.fbq = function () {
+					n.callMethod ?
+						n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+				};
+				if (!f._fbq) f._fbq = n;
+				n.push = n;
+				n.loaded = !0;
+				n.version = '2.0';
+				n.queue = [];
+				t = b.createElement(e);
+				t.async = !0;
+				t.src = v;
+				s = b.getElementsByTagName(e)[0];
+				s.parentNode.insertBefore(t, s)
+			}(window, document, 'script',
+				'https://connect.facebook.net/en_US/fbevents.js');
+			fbq('init', '234515527472799');
+			fbq('track', 'PageView');
+		</script>
+		<noscript>
+			<img height="1" width="1" src="https://www.facebook.com/tr?id=234515527472799&ev=PageView&noscript=1"/>
+		</noscript>
+		<!-- End Facebook Pixel Code -->
+		<script>(function (w, d, t, r, u) {
+				var f, n, i;
+				w[u] = w[u] || [], f = function () {
+					var o = {ti: "56285896"};
+					o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad")
+				}, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function () {
+					var s = this.readyState;
+					s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null)
+				}, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i)
+			})(window, document, "script", "//bat.bing.com/bat.js", "uetq");
+		</script>
+			<script>
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script src="https://pomcar.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script src="https://pomcar.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.3" id="jquery-ui-mouse-js"></script>
+<script src="https://pomcar.com/wp-includes/js/jquery/ui/resizable.min.js?ver=1.13.3" id="jquery-ui-resizable-js"></script>
+<script src="https://pomcar.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.13.3" id="jquery-ui-draggable-js"></script>
+<script src="https://pomcar.com/wp-includes/js/jquery/ui/controlgroup.min.js?ver=1.13.3" id="jquery-ui-controlgroup-js"></script>
+<script src="https://pomcar.com/wp-includes/js/jquery/ui/checkboxradio.min.js?ver=1.13.3" id="jquery-ui-checkboxradio-js"></script>
+<script src="https://pomcar.com/wp-includes/js/jquery/ui/button.min.js?ver=1.13.3" id="jquery-ui-button-js"></script>
+<script src="https://pomcar.com/wp-includes/js/jquery/ui/dialog.min.js?ver=1.13.3" id="jquery-ui-dialog-js"></script>
+<script src="https://pomcar.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.3" id="jquery-ui-datepicker-js"></script>
+<script id="jquery-ui-datepicker-js-after">
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+//# sourceURL=jquery-ui-datepicker-js-after
+</script>
+<script src="https://pomcar.com/wp-includes/js/jquery/ui/tabs.min.js?ver=1.13.3" id="jquery-ui-tabs-js"></script>
+<script id="pomcar-forgot-password-js-extra">
+var pomcarForgotPassword = {"recaptchaSiteKey":"6LdMA5IrAAAAAHEfTqrNzeDZ8zYQc6ecVCchuk-5","recaptchaEnabled":"1","ajaxUrl":"https://pomcar.com/wp-admin/admin-ajax.php?action=sf_ajax_forgot_password"};
+//# sourceURL=pomcar-forgot-password-js-extra
+</script>
+<script src="https://pomcar.com/wp-content/plugins/sf-pomcar/assets/js/forgot-password.js?ver=1.0.0" id="pomcar-forgot-password-js"></script>
+<script defer src="https://pomcar.com/wp-content/plugins/duracelltomi-google-tag-manager/dist/js/gtm4wp-form-move-tracker.js?ver=1.22.3" id="gtm4wp-form-move-tracker-js"></script>
+<script defer src="https://pomcar.com/wp-content/themes/mt-pomcar-1.0.5/js/fontawesome.all.min.js?ver=1.0.5" id="fontawesome-all-scripts-js"></script>
+<script id="mt-pomcar-scripts-js-extra">
+var mt_pomcar_scripts = {"ajax_url":"https://pomcar.com/wp-admin/admin-ajax.php","nonce":"cdd86bf7f7"};
+//# sourceURL=mt-pomcar-scripts-js-extra
+</script>
+<script src="https://pomcar.com/wp-content/themes/mt-pomcar-1.0.5/js/theme.min.js?ver=1.0.5.1777889445" id="mt-pomcar-scripts-js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaI0jMNDtKJTJgUT1CmTNsTlOlUWADZUc&amp;v=3.exp&amp;libraries=places&amp;ver=1.0.0" id="mt-pomcar-autocomplete-address-google-maps-js" async data-wp-strategy="async"></script>
+<script defer src="https://pomcar.com/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=10.7.0" id="sourcebuster-js-js"></script>
+<script id="wc-order-attribution-js-extra">
+var wc_order_attribution = {"params":{"lifetime":1.0e-5,"session":30,"base64":false,"ajaxurl":"https://pomcar.com/wp-admin/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+//# sourceURL=wc-order-attribution-js-extra
+</script>
+<script defer src="https://pomcar.com/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=10.7.0" id="wc-order-attribution-js"></script>
+<script id="tech-matching-js-extra">
+var ajax_object = {"ajax_url":"https://pomcar.com/wp-admin/admin-ajax.php"};
+//# sourceURL=tech-matching-js-extra
+</script>
+<script src="https://pomcar.com/wp-content/plugins/sf-pomcar/assets/js/tech-matching.js?ver=6.9.4" id="tech-matching-js"></script>
+<script src="https://pomcar.com/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script src="https://pomcar.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1" id="wp-hooks-js"></script>
+<script src="https://pomcar.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script src="https://pomcar.com/wp-includes/js/dist/a11y.min.js?ver=cb460b4676c94bd228ed" id="wp-a11y-js"></script>
+<script defer='defer' src="https://pomcar.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.10.0" id="gform_json-js"></script>
+<script id="gform_gravityforms-js-extra">
+var gform_i18n = {"datepicker":{"days":{"monday":"Mo","tuesday":"Tu","wednesday":"We","thursday":"Th","friday":"Fr","saturday":"Sa","sunday":"Su"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":1,"iconText":"Select date"}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled","error":"Error","message":"Message"},"vars":{"images_url":"https://pomcar.com/wp-content/plugins/gravityforms/images"}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https://pomcar.com/wp-content/plugins/gravityforms","number_formats":[],"spinnerUrl":"https://pomcar.com/wp-content/plugins/gravityforms/images/spinner.svg","version_hash":"c7ae35a7b22d4f975e3da340a8268053","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+//# sourceURL=gform_gravityforms-js-extra
+</script>
+<script defer='defer' src="https://pomcar.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.10.0" id="gform_gravityforms-js"></script>
+<script defer='defer' src="https://www.google.com/recaptcha/api.js?hl=en&amp;ver=6.9.4#038;render=explicit" id="gform_recaptcha-js"></script>
+<script defer='defer' src="https://pomcar.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.10.0" id="gform_placeholder-js"></script>
+<script defer='defer' src="https://pomcar.com/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=3f278756f0a3032bed328ff6a9f6c01d" id="gform_gravityforms_utils-js"></script>
+<script defer='defer' src="https://pomcar.com/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=4f8b3915c1c1e1a6800825abd64b03cb" id="gform_gravityforms_theme_vendors-js"></script>
+<script id="gform_gravityforms_theme-js-extra">
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"c7ae35a7b22d4f975e3da340a8268053"},"ajax":{"ajaxurl":"https://pomcar.com/wp-admin/admin-ajax.php","ajax_submission_nonce":"02d6442077","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again."}}}},"hmr_dev":"","public_path":"https://pomcar.com/wp-content/plugins/gravityforms/assets/js/dist/","config_nonce":"e054595c9e"};
+//# sourceURL=gform_gravityforms_theme-js-extra
+</script>
+<script defer='defer' src="https://pomcar.com/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=c6a2001023348ccf279dfc6bcec0a654" id="gform_gravityforms_theme-js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://pomcar.com/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://pomcar.com/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<script>
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 25) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script>
+gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "25", currentPage: "1", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_25" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_25";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_25" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 25, 1 );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );
+</script>
+<style>
+	.honeypot-field {
+		display: none !important;
+		position: absolute !important;
+		left: -9999px !important;
+	}
+	.g-recaptcha {
+		margin-bottom: 15px;
+	}
+</style>
+<div id="pomcar-forgot-password-modal" class="modal fade">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-body p-5">
+				<div class="login-modal-logo mb-3 w-50">
+					<img src="https://pomcar.com/wp-content/uploads/2015/02/logo-color.png">
+				</div>
+				<h5 class="login-modal-instruct">Enter your email address and we will send you a link to reset your
+					password.
+				</h5>
+				<div id="sf-forgoet-password-modal-errors"></div>
+				<form name="forgotpassform" id="sf-forgot-password-form" action="" method="post">
+					<input type="hidden" id="sf_modal_forgot_password_nonce" name="sf_modal_forgot_password_nonce" value="737907915b" /><input type="hidden" name="_wp_http_referer" value="/packages/" />
+					<p class="login-username">
+						<label></label>
+						<input type="text"
+								name="email"
+								id=""
+								class="input user_login form-control"
+								value=""
+								size="20"
+								placeholder="Email Address">
+					</p>
+
+					<!-- Honeypot field -->
+					<div class="honeypot-field">
+						<label for="email_confirm">Please leave this field empty</label>
+						<input type="text" name="email_confirm" id="email_confirm" autocomplete="off">
+					</div>
+
+					<p class="login-submit">
+						<input type="submit" name="wp-submit" class="btn btn-primary button-primary wp-submit g-recaptcha" 
+														data-sitekey="6LdMA5IrAAAAAHEfTqrNzeDZ8zYQc6ecVCchuk-5" 
+							data-callback="onSubmitForgotPassword" 
+							data-size="invisible"
+														value="Reset Password">
+						<input type="hidden" name="redirect_to" value="">
+					</p>
+				</form>
+				<div class="login-modal-login pomcar-login-trigger forgot-pass-login-link">
+					<a href="#"
+						data-bs-target="#pomcar-login-modal"
+						data-bs-toggle="modal">Log in to POMCAR</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="pomcar-login-modal" class="modal fade">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-body p-5">
+				<div class="login-modal-logo mb-3 w-50">
+					<img src="https://pomcar.com/wp-content/uploads/2015/02/logo-color.png">
+				</div>
+				<h4 class="login-modal-intro">Technician Sign In</h4>
+				<div id="sf-login-modal-errors"></div>
+				<form name="loginform" id="sf-ajax-login-form" action="https://pomcar.com/wp-login.php" method="post">
+
+					<p class="login-username mb-0">
+						<label></label>
+						<input type="text"
+								name="email"
+								class="input user_login form-control"
+								value=""
+								size="20"
+								placeholder="Email Address">
+					</p>
+					<p class="login-password">
+						<label for="user_pass"></label>
+						<input type="password"
+								name="password"
+								id="user_pass"
+								class="input form-control"
+								value=""
+								size="20"
+								placeholder="Password">
+					</p>
+
+					<p class="login-submit mb-3">
+						<input type="submit"
+								name="wp-submit"
+								class="btn btn-primary button-primary wp-submit"
+								value="Log In">
+						<input type="hidden" name="redirect_to" value="">
+					</p>
+					<div class="login-remember mb-3">
+						<label>
+							<input class="form-check-input"
+									name="rememberme"
+									type="checkbox"
+									id="rememberme"
+									value="forever"> Remember Me
+						</label>
+						<a data-bs-target="#pomcar-forgot-password-modal"
+							data-bs-toggle="modal"
+							href="/wp-login.php?action=lostpassword">
+							Forgot Password?
+						</a>
+					</div>
+				</form>
+				<div class="login-modal-footer">Not a member of the POMCAR Network? <br>
+					<a href="/technician-registration">Apply Now</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery( document ).ready( function ( $ ) {
+		$( 'form#sf-ajax-login-form' ).on( 'submit', function ( e ) {
+			e.preventDefault();
+			var datastring = $( this ).serialize();
+			$.ajax( {
+				type: "POST",
+				url: "https://pomcar.com/wp-admin/admin-ajax.php?action=sf_ajax_login",
+				data: datastring,
+				dataType: "json",
+				success: function ( data ) {
+					if ( data.error ) {
+						jQuery( '#sf-login-modal-errors' ).html( '<div class="login-modal-errors">' + data.error + '</div>' );
+					}
+					if ( data.success ) {
+						if ( data.redirect ) {
+							window.location = data.redirect;
+						} else {
+							window.location.reload();
+						}
+
+					}
+				},
+				error: function () {
+					alert( 'Login ajax error.' );
+				}
+			} );
+			return false;
+		} );
+
+	} );
+</script>
+		
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"822e1996019c4d9d9c65c2ae47dc6e1a","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+</html>
+
