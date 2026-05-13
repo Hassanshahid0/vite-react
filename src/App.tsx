@@ -142,6 +142,25 @@ function App() {
         window.alert('Payment submitted. Admin will confirm your transaction. Thank you for choosing CARZ SQUAD.')
         window.history.pushState({}, '', '/')
         setLocationKey(`${window.location.pathname}${window.location.hash}`)
+        return
+      }
+
+      const openMenuBtn = target.closest('.js-open-menu, .mobile-nav__button--menu')
+      if (openMenuBtn) {
+        const nav = document.querySelector('nav.main-nav')
+        if (nav) {
+          nav.classList.add('trae-nav-open')
+        }
+        return
+      }
+
+      const closeMenuBtn = target.closest('.js-close-menu, .main-nav__link.js-close-menu')
+      if (closeMenuBtn) {
+        const nav = document.querySelector('nav.main-nav')
+        if (nav) {
+          nav.classList.remove('trae-nav-open')
+        }
+        return
       }
     }
 
@@ -798,7 +817,7 @@ function App() {
             </div>
           </div>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav hide-for-medium">
           <div class="container">
             <ul class="main-nav__list">
               <li class="main-nav__item"><a href="/" class="main-nav__link">Home</a></li>
@@ -1474,38 +1493,6 @@ header.main-header nav.main-nav .main-nav__link--standout{
   color:#fff !important;
 }
 
-@media (min-width: 841px) {
-  nav.main-nav {
-    display: none !important;
-  }
-}
-
-@media (max-width: 840px) {
-  nav.main-nav {
-    display: none;
-    position: fixed;
-    z-index: 10000;
-    background: #fff;
-    border: 1px solid rgba(17,24,39,.1);
-    border-radius: 12px;
-    box-shadow: 0 20px 40px rgba(0,0,0,.15);
-    padding: 12px;
-    overflow-y: auto;
-  }
-  nav.main-nav.trae-nav-open {
-    display: block !important;
-  }
-  nav.main-nav .main-nav__list {
-    flex-direction: column;
-    align-items: stretch !important;
-    gap: 8px;
-  }
-  nav.main-nav .main-nav__link {
-    width: 100%;
-    justify-content: flex-start;
-  }
-}
-
 :root{
   --cs-primary: #dc2626;
   --cs-primary-700: #b91c1c;
@@ -1832,34 +1819,45 @@ header.main-header nav.main-nav .main-nav__link--standout{
   .cs-pay__item{ grid-column: span 4; }
 }
 @media (max-width: 900px){
+  .hide-for-medium {
+    display: block !important;
+  }
+  .hide-for-small-only {
+    display: none !important;
+  }
   .site-logo{ display:flex; justify-content:center; }
   .main-header__details{ justify-content:flex-end; }
   .site-logo{ min-height: 260px; }
   .site-logo__image{ max-height: 260px; }
   nav.main-nav{
-    display:none;
-    position:fixed;
-    top:72px;
-    left:10px;
-    right:auto;
-    width:min(260px, calc(100vw - 20px));
-    max-height:calc(100vh - 92px);
-    z-index:9999;
-    background:#fff;
+      display:none !important;
+      position:fixed !important;
+    top: 100px !important;
+    left: 20px !important;
+    right: 20px !important;
+    width: auto !important;
+    max-width: 320px;
+    max-height: calc(100vh - 120px);
+    z-index: 100000 !important;
+    background:#fff !important;
     overflow:auto;
-    padding:12px 12px 14px;
+    padding:16px;
     border-radius:14px;
-    box-shadow:0 16px 40px rgba(0,0,0,.24);
-    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    transform: translateY(-10px);
     opacity: 0;
     pointer-events: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
   }
   nav.main-nav.trae-nav-open{
-    display:block;
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-    transition: transform 160ms ease, opacity 160ms ease;
+      display:block !important;
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible !important;
+    }
+  .hide-for-medium.trae-nav-open {
+    display: block !important;
   }
   nav.main-nav .main-nav__list{
     display:flex;
