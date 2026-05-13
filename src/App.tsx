@@ -1156,6 +1156,7 @@ function App() {
     "@font-face{font-family:'lemon-squad';src:local('Montserrat'),local('Arial');font-weight:400;font-style:normal;font-display:swap;}",
     "@font-face{font-family:'lemon-squad';src:local('Montserrat'),local('Arial');font-weight:700;font-style:normal;font-display:swap;}",
     "@font-face{font-family:'lemon-squad';src:local('Montserrat'),local('Arial');font-weight:800;font-style:normal;font-display:swap;}",
+    "@font-face{font-family:'lemon-squad';src:local('Montserrat'),local('Arial') !important;}",
   ].join('\n')
 
   const pageExtraCss = useMemo(() => {
