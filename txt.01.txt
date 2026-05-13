@@ -853,8 +853,8 @@
     }],
      "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.850296176629",
-        "reviewCount": "1857"
+        "ratingValue": "4.8502155172414",
+        "reviewCount": "1856"
     },
      "review": {
         "@type": "Review",
@@ -1090,6 +1090,22 @@
                                                         <li class="section-text" style="padding-top: 10px">
                                                                 <ul class="reviews__stars">
                                     <li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li>                                </ul>
+                                                                EXCELLENT review, very thorough and detailed, you saved me from buying a vehicle that was repainted and most likely in an accident.  I thank you so very very much to the lemon squad for doing this.  You guys are well worth the price when purchasing a<a href="https://lemonsquad.com/customer-reviews">. . .
+                                    (Read More)</a>
+                                                                                                <span
+                                    class="section-text section-text--name">Joseph S.</span>
+                            </li>
+                                                        <li class="section-text" style="padding-top: 10px">
+                                                                <ul class="reviews__stars">
+                                    <li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li>                                </ul>
+                                                                What a great experience!  The inspector, Steven, was always polite, courteous and made every effort to work around my hectic schedule.  He inspected the vehicle at my work place, which really saved me so much time and hassle.  The inspection was thor<a href="https://lemonsquad.com/customer-reviews">. . .
+                                    (Read More)</a>
+                                                                                                <span
+                                    class="section-text section-text--name">Ted G.</span>
+                            </li>
+                                                        <li class="section-text" style="padding-top: 10px">
+                                                                <ul class="reviews__stars">
+                                    <li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li>                                </ul>
                                                                 Great service, extremely polite staff,and a detailed report with specific pictures of area of concerns.
 Just hired them again for another, and will do the same in the future. <a href="https://lemonsquad.com/customer-reviews">(Read More)</a>
                                                                                                 <span
@@ -1098,37 +1114,17 @@ Just hired them again for another, and will do the same in the future. <a href="
                                                         <li class="section-text" style="padding-top: 10px">
                                                                 <ul class="reviews__stars">
                                     <li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li>                                </ul>
-                                                                Thank you so much for doing such a great job inspecting the car. The price was very low compared to comprable cars and it seemed too good to be true. I appreciate you noting your concerns with the car and I will be using this service in the future. T<a href="https://lemonsquad.com/customer-reviews">. . .
+                                                                I can't say enough about these guys.They are the absolute best. Incredibly thorough and professional. I would never buy a used car without having them inspect it first. Just used them for the first time for a car I was looking at for my daughter, and<a href="https://lemonsquad.com/customer-reviews">. . .
                                     (Read More)</a>
                                                                                                 <span
-                                    class="section-text section-text--name">Gary W.</span>
+                                    class="section-text section-text--name">David B.</span>
                             </li>
                                                         <li class="section-text" style="padding-top: 10px">
                                                                 <ul class="reviews__stars">
                                     <li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li>                                </ul>
-                                                                Inspection was extremely helpful.  Items that could be seen in the photos on the listing but were overlooked were identified as potential issues during the inspection.  Since this vehicle was out of town, it was great having "boots on the ground" to <a href="https://lemonsquad.com/customer-reviews">. . .
-                                    (Read More)</a>
+                                                                Super Awesome and THOROUGH!!! inspection.  I really appreciate this inspectors work! <a href="https://lemonsquad.com/customer-reviews">(Read More)</a>
                                                                                                 <span
-                                    class="section-text section-text--name">William W.</span>
-                            </li>
-                                                        <li class="section-text" style="padding-top: 10px">
-                                                                <ul class="reviews__stars">
-                                    <li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li>                                </ul>
-                                                                Five Star Service , Prompt and very professional service. I will definitely use your firm again for my next classic vehicle purchase. 
-
-Regards,
-
-Rick <a href="https://lemonsquad.com/customer-reviews">(Read More)</a>
-                                                                                                <span
-                                    class="section-text section-text--name">Rick E.</span>
-                            </li>
-                                                        <li class="section-text" style="padding-top: 10px">
-                                                                <ul class="reviews__stars">
-                                    <li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li><li class="icon-star"></li>                                </ul>
-                                                                you guys are great! your inspection helped me decide and gave me the needed second opinion on the curent status of the wrangler. i strongly recommend an inspection like this. any seller who doesn't agree to do one is hiding something. seller and myse<a href="https://lemonsquad.com/customer-reviews">. . .
-                                    (Read More)</a>
-                                                                                                <span
-                                    class="section-text section-text--name">Christoph M.</span>
+                                    class="section-text section-text--name">Melvin K.</span>
                             </li>
                                                     </ul>
                     </div>
@@ -1337,7 +1333,7 @@ function ucwords(str) {
 </script>
     <script>$(document).ready(function(){if(typeof initViewScripts=="function"){initViewScripts();}});</script>
     <script type="text/javascript" src="//cdn.callrail.com/companies/669715816/362bed47de01f08a8d8f/12/swap.js"></script>
-    <!-- BREACH prevention "random string" : MHyTAib5TA -->
+    <!-- BREACH prevention "random string" : XFPbRkxfbf -->
     </body>
 </html>
 <script>
@@ -1354,6 +1350,3 @@ function ucwords(str) {
         });
     });
 </script>
-
-
-i want to convert exact code in react  
