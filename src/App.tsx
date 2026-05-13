@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import homeHtmlRaw from '../txt.01.txt?raw'
 import howItWorkHtmlRaw from '../txt.02?raw'
+import logo1 from './assets/logo1.png'
+import logo from './assets/logo.png'
 import './App.css'
 
 type CartItem = {
@@ -772,7 +774,7 @@ function App() {
           <div class="container">
             <div class="row">
               <div class="site-logo base-12 med-6">
-                <a data-cy="logo" href="/"><img src="/src/assets/logo1.png" class="site-logo__image" alt="Carz Squad - Pre Car Inspection"></a>
+                <a data-cy="logo" href="/"><img src="${logo1}" class="site-logo__image" alt="Carz Squad - Pre Car Inspection"></a>
               </div>
               <div class="main-header__details med-6">
                 <a class="main-header__number" data-cy="contact-number" href="https://wa.me/18578228188" target="_blank" rel="noopener noreferrer">+18578228188</a>
@@ -900,7 +902,7 @@ function App() {
     }
 
     if (shouldApplyLemonSquadCustomizations) {
-      const localFooterLogoSrc = '/src/assets/logo.png'
+      const localFooterLogoSrc = logo
       const localLogoAlt = 'Carz Squad - Pre Car Inspection'
 
       doc.querySelectorAll('img.footer__logo').forEach((img) => {
@@ -1236,8 +1238,7 @@ body[data-page="how-it-work"]{
 }
 header.main-header{
   display:block !important;
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 9998;
 }
 .main-header__content{
