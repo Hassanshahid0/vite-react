@@ -688,7 +688,9 @@ function App() {
           if (
             normalizedPath.startsWith('carz-squad-logo') ||
             normalizedPath.startsWith('src/assets/logo') ||
-            normalizedPath.startsWith('src/assets/logo1')
+            normalizedPath.startsWith('src/assets/logo1') ||
+            normalizedPath.startsWith('assets/logo') ||
+            normalizedPath.startsWith('assets/logo1')
           ) {
             return `${attrPrefix}/${path}`
           }
