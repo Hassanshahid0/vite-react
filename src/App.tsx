@@ -148,19 +148,13 @@ function App() {
 
       const openMenuBtn = target.closest('.js-open-menu, .mobile-nav__button--menu')
       if (openMenuBtn) {
-        const nav = document.querySelector('nav.main-nav')
-        if (nav) {
-          nav.classList.add('trae-nav-open')
-        }
+        // Handled by dedicated menu useEffect
         return
       }
 
       const closeMenuBtn = target.closest('.js-close-menu, .main-nav__link.js-close-menu')
       if (closeMenuBtn) {
-        const nav = document.querySelector('nav.main-nav')
-        if (nav) {
-          nav.classList.remove('trae-nav-open')
-        }
+        // Handled by dedicated menu useEffect
         return
       }
     }
@@ -1833,10 +1827,10 @@ header.main-header nav.main-nav .main-nav__link--standout{
   nav.main-nav{
       display:none !important;
       position:fixed !important;
-    top: 100px !important;
-    left: 20px !important;
-    right: 20px !important;
-    width: auto !important;
+    top: 100px;
+    left: 20px;
+    right: 20px;
+    width: auto;
     max-width: 320px;
     max-height: calc(100vh - 120px);
     z-index: 100000 !important;
@@ -1857,6 +1851,9 @@ header.main-header nav.main-nav .main-nav__link--standout{
       pointer-events: auto;
       visibility: visible !important;
     }
+  .mobile-nav__button {
+    cursor: pointer !important;
+  }
   .hide-for-medium.trae-nav-open {
     display: block !important;
   }
@@ -2034,11 +2031,11 @@ body[data-page="inspections"] .inspections-slider__arrow:disabled{
       const left = Math.min(Math.max(minLeft, rect.left), window.innerWidth - width - minLeft)
       const maxHeight = Math.max(220, window.innerHeight - clampedTop - minLeft)
 
-      nav.style.width = `${width}px`
-      nav.style.left = `${left}px`
-      nav.style.right = 'auto'
-      nav.style.top = `${clampedTop}px`
-      nav.style.maxHeight = `${maxHeight}px`
+      nav.style.setProperty('width', `${width}px`, 'important')
+      nav.style.setProperty('left', `${left}px`, 'important')
+      nav.style.setProperty('right', 'auto', 'important')
+      nav.style.setProperty('top', `${clampedTop}px`, 'important')
+      nav.style.setProperty('max-height', `${maxHeight}px`, 'important')
     }
 
     const open = () => {
@@ -2051,14 +2048,30 @@ body[data-page="inspections"] .inspections-slider__arrow:disabled{
       openBtn.setAttribute('aria-expanded', 'false')
     }
 
-    const onOpen = (e: Event) => {
+    const onToggle = (e: Event) => {
       e.preventDefault()
-      open()
+      e.stopPropagation()
+      if (nav.classList.contains('trae-nav-open')) {
+        close()
+      } else {
+        open()
+      }
     }
+
     const onClose = (e: Event) => {
       e.preventDefault()
+      e.stopPropagation()
       close()
     }
+
+    const onDocClick = (e: Event) => {
+      if (!nav.classList.contains('trae-nav-open')) return
+      const target = e.target as Element | null
+      if (!target) return
+      if (nav.contains(target) || openBtn.contains(target)) return
+      close()
+    }
+
     const onNavClick = (e: Event) => {
       const target = e.target as Element | null
       const anchor = target?.closest?.('a[href]') as HTMLAnchorElement | null
@@ -2067,16 +2080,20 @@ body[data-page="inspections"] .inspections-slider__arrow:disabled{
       if (href.startsWith('/') || href.startsWith('#')) close()
     }
 
-    openBtn.addEventListener('click', onOpen)
+    openBtn.addEventListener('click', onToggle)
+    openBtn.addEventListener('touchstart', onToggle, { passive: false })
     closeBtn?.addEventListener('click', onClose)
     nav.addEventListener('click', onNavClick)
+    document.addEventListener('click', onDocClick)
     window.addEventListener('resize', positionNav)
     window.addEventListener('scroll', positionNav, { passive: true })
 
     return () => {
-      openBtn.removeEventListener('click', onOpen)
+      openBtn.removeEventListener('click', onToggle)
+      openBtn.removeEventListener('touchstart', onToggle)
       closeBtn?.removeEventListener('click', onClose)
       nav.removeEventListener('click', onNavClick)
+      document.removeEventListener('click', onDocClick)
       window.removeEventListener('resize', positionNav)
       window.removeEventListener('scroll', positionNav)
     }
