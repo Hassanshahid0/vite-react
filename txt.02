@@ -230,8 +230,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="inner">
 					<h1 class="my-5 fs-xl">How It Works</h1>
 					<h2 class="fw-semibold mb-5 fs-4">Getting a pre-purchase <span class="d-none d-lg-block"></span>vehicle inspection is easy.</h2>
-					<a href="https://pomcar.com/packages"
-						class="btn btn-secondary btn-lg btn-block btn-hover-gray d-inline-flex gap-3 align-items-center"><i class="fa fa-2x fa-box-open"></i> PACKAGES</a>
+
 				</div>
 			</div>
 		</div>
@@ -676,89 +675,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</div>
 </section>
 
-<section class="section bg-dark text-white text-center py-5">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<h3>
-					Still have questions? <span class="d-block d-md-none"></span>
-					<a class="text-pink" href="">Visit our FAQ page.</a>
-				</h3>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="section get-started">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 pb-0 py-4 py-lg-5">
-				<div class="section-inner text-center py-3">
-					<h3 class="text-secondary">Get Started</h3>
-					<h2 class="text-primary fs-1 mb-5">Vehicle Inspection Packages</h2>
-					<p class="w-lg-50 mx-auto mb-5">All POMCAR vehicle inspection packages include a 270-point inspection and road test (provided vehicle is road worthy and seller/dealer allows for one). <br><strong>The best package for you depends on the vehicle to be inspected.</strong></p>
-
-					<div class="package-grid pt-lg-5">
-													<div class="package d-flex ">
-																<div class="package-inner d-flex flex-column justify-content-between rounded-2 bg-light overflow-hidden">
-									<div class="overflow-hidden package-image rounded-2">
-										<img src="https://pomcar.com/wp-content/themes/mt-pomcar-1.0.5/img/mechanic/check-inside-480.jpg" alt="Starter" class="" width="720" height="480" loading="lazy">									</div>
-									<div class="package-content d-flex flex-column flex-grow-1 align-items-center p-4 pb-5 p-lg-5">
-										<h3 class="package-title text-primary">Starter</h3>
-										<h5 class="package-price text-secondary mb-4">
-											$180										</h5>
-										<div class="package-details flex-grow-1 mb-4">
-											<p><strong>Vehicles 1995 and up. <br>Where no fluid check required.</strong></p>
-		<p>Includes our 270-point inspection and up to three focus areas of your choosing.</p>										</div>
-										<a href="https://pomcar.com/inspection-request"
-											class="btn btn-secondary btn-lg btn-block"><i class="fa-solid fa-car-wrench"></i> ORDER
-											NOW</a>
-									</div>
-								</div>
-							</div>
-													<div class="package d-flex ">
-																<div class="package-inner d-flex flex-column justify-content-between rounded-2 bg-light overflow-hidden">
-									<div class="overflow-hidden package-image rounded-2">
-										<img src="https://pomcar.com/wp-content/themes/mt-pomcar-1.0.5/img/mechanic/checking-fluid-480.jpg" alt="Experienced" class="" width="720" height="480" loading="lazy">									</div>
-									<div class="package-content d-flex flex-column flex-grow-1 align-items-center p-4 pb-5 p-lg-5">
-										<h3 class="package-title text-primary">Experienced</h3>
-										<h5 class="package-price text-secondary mb-4">
-											$185										</h5>
-										<div class="package-details flex-grow-1 mb-4">
-											<p><strong>Vehicles 1995 and older. <br>When no onboard diagnostics scan available.</strong></p>
-		<p>Includes Starter Package and a check of all fluid levels. The fluid levels help determine whether a vehicle has been properly maintained and how long it has been sitting idle.</p>										</div>
-										<a href="https://pomcar.com/inspection-request"
-											class="btn btn-secondary btn-lg btn-block"><i class="fa-solid fa-car-wrench"></i> ORDER
-											NOW</a>
-									</div>
-								</div>
-							</div>
-													<div class="package d-flex highlight">
-																	<div class="package-highlight bg-primary rounded-2">
-										<div class="text-white p-2 small">MOST POPULAR</div>
-									</div>
-																<div class="package-inner d-flex flex-column justify-content-between rounded-2 bg-light overflow-hidden">
-									<div class="overflow-hidden package-image rounded-2">
-										<img src="https://pomcar.com/wp-content/themes/mt-pomcar-1.0.5/img/mechanic/scan-1-480.jpg" alt="Professional" class="" width="720" height="480" loading="lazy">									</div>
-									<div class="package-content d-flex flex-column flex-grow-1 align-items-center p-4 pb-5 p-lg-5">
-										<h3 class="package-title text-primary">Professional</h3>
-										<h5 class="package-price text-secondary mb-4">
-											$195										</h5>
-										<div class="package-details flex-grow-1 mb-4">
-											<p><strong>Vehicles 1996 and newer. <br>Those equipped with OBD-II systems. Checks for active or stored codes.</strong></p>
-		<p>Includes Experienced Package, plus an OBD-II scan of the onboard computer to reveal any active trouble codes that should be addressed immediately.</p>										</div>
-										<a href="https://pomcar.com/inspection-request"
-											class="btn btn-secondary btn-lg btn-block"><i class="fa-solid fa-car-wrench"></i> ORDER
-											NOW</a>
-									</div>
-								</div>
-							</div>
-											</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
 <section id="contact" class="section contact white-top-border">
 	<div class="bg-img">
 		<img src="https://pomcar.com/wp-content/themes/mt-pomcar-1.0.5/img/blue-car.jpg" alt="" class="" loading="lazy">	</div>
