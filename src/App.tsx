@@ -1,3 +1,4 @@
+import React from 'react'
 import { useEffect, useMemo, useState } from 'react'
 import homeHtmlRaw from '../txt.01.txt?raw'
 import howItWorkHtmlRaw from '../txt.02?raw'
