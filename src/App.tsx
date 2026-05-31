@@ -1,4 +1,3 @@
-import React from 'react'
 import { useEffect, useMemo, useState } from 'react'
 import homeHtmlRaw from '../txt.01.txt?raw'
 import howItWorkHtmlRaw from '../txt.02?raw'
@@ -780,9 +779,6 @@ function App() {
     const shouldApplyLemonSquadCustomizations = pageBaseOrigin === 'https://lemonsquad.com'
     const shouldApplyPomcarLocalLinks = pageBaseOrigin === 'https://pomcar.com'
 
-    const isMainPage =
-      !isHowItWorkPage && !isPackagesPage && !isOrderNowPage && !isInspectionsPage && !isFaqPage && !isCartPage && !isPaymentPage
-
     const standardizedHeaderHtml = `
       <header class="main-header">
         <nav class="mini-nav hide-for-small-only">
@@ -953,11 +949,6 @@ function App() {
       })
 
       const newDisplay = '+18578228188'
-      const newTel = 'tel:+18578228188'
-      const shouldReplaceNumber = (value: string) => {
-        const digits = value.replace(/\D/g, '')
-        return digits === '8882317965' || digits === '18882317965'
-      }
 
       doc.querySelectorAll('a[href]').forEach((a) => {
         const href = a.getAttribute('href') ?? ''
