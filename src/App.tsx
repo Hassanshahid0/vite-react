@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import './App.css'
 import Home from './components/Home'
 
@@ -9,7 +9,6 @@ type CartItem = {
 }
 
 function App() {
-  const [locationKey, setLocationKey] = useState(() => `${window.location.pathname}${window.location.hash}`)
   const [cart, setCart] = useState<CartItem[]>(() => {
     try {
       const raw = window.localStorage.getItem('cs_cart')
@@ -22,11 +21,7 @@ function App() {
     }
   })
 
-  useEffect(() => {
-    const onPopState = () => setLocationKey(`${window.location.pathname}${window.location.hash}`)
-    window.addEventListener('popstate', onPopState)
-    return () => window.removeEventListener('popstate', onPopState)
-  }, [])
+
 
   useEffect(() => {
     try {
@@ -70,7 +65,6 @@ function App() {
         e.preventDefault()
         addToCart({ id: `${key}-${Date.now()}`, name: pkg.name, price: pkg.price })
         window.history.pushState({}, '', '/cart')
-        setLocationKey(`${window.location.pathname}${window.location.hash}`)
         return
       }
 
@@ -96,7 +90,6 @@ function App() {
         clearCart()
         window.alert('Payment submitted. Admin will confirm your transaction. Thank you for choosing CARZ SQUAD.')
         window.history.pushState({}, '', '/')
-        setLocationKey(`${window.location.pathname}${window.location.hash}`)
         return
       }
 
@@ -131,7 +124,6 @@ function App() {
       }
 
       window.history.pushState({}, '', '/payment')
-      setLocationKey(`${window.location.pathname}${window.location.hash}`)
     }
 
     document.addEventListener('click', onDocClick)
@@ -142,15 +134,7 @@ function App() {
     }
   }, [])
 
-  const pathname = useMemo(() => {
-    const [path] = locationKey.split('#')
-    return path || '/'
-  }, [locationKey])
 
-  const normalizedPathname = useMemo(() => {
-    if (pathname.length > 1 && pathname.endsWith('/')) return pathname.slice(0, -1)
-    return pathname
-  }, [pathname])
 
   const baseCss = [
     "@font-face{font-family:'lemon-squad';src:local('Montserrat'),local('Arial');font-weight:400;font-style:normal;font-display:swap;}",
