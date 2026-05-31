@@ -1413,9 +1413,16 @@ body[data-page="how-it-work"]{
   align-items:center;
   flex-wrap:wrap;
   gap:10px;
+  margin:0;
+  padding:0;
+  list-style:none;
 }
 .mini-nav{
+  display: block !important;
   background: #111827 !important;
+}
+.hide-for-medium {
+  display: none !important;
 }
 header.main-header{
   display:block !important;
