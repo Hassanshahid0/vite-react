@@ -900,7 +900,7 @@ function App() {
     })
 
     if (shouldApplyPomcarLocalLinks) {
-      ;['nav.main-nav', 'ul.main-nav__list', '#wrapper-footer-full', '#wrapper-footer'].forEach((selector) => {
+      ;['#wrapper-footer-full', '#wrapper-footer'].forEach((selector) => {
         doc.querySelectorAll(selector).forEach((el) => el.remove())
       })
 
