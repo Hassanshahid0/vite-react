@@ -3,6 +3,7 @@ import homeHtmlRaw from '../txt.01.txt?raw'
 import howItWorkHtmlRaw from '../txt.02?raw'
 import logo1 from './assets/logo1.png'
 import logo from './assets/logo.png'
+import popupImage from './assets/image.png'
 import './App.css'
 
 type CartItem = {
@@ -24,6 +25,7 @@ function App() {
       return []
     }
   })
+  const [isPopupOpen, setIsPopupOpen] = useState(false)
 
   useEffect(() => {
     const onPopState = () => setLocationKey(`${window.location.pathname}${window.location.hash}`)
@@ -98,6 +100,14 @@ function App() {
     const onDocClick = (e: MouseEvent) => {
       const target = e.target as Element | null
       if (!target) return
+
+      // Check if clicked "Go to Order Now" link
+      const goToOrderNowLink = target.closest('a[href="/order-now"]')
+      if (goToOrderNowLink && (goToOrderNowLink.textContent?.includes('Go to Order Now') || goToOrderNowLink.textContent?.includes('go to order now'))) {
+        e.preventDefault()
+        setIsPopupOpen(true)
+        return
+      }
 
       const addBtn = target.closest?.('[data-cs-add-to-cart]') as HTMLElement | null
       if (addBtn) {
@@ -2176,10 +2186,103 @@ body[data-page="inspections"] .inspections-slider__arrow:disabled{
     <div className="page-shell">
       <style
         dangerouslySetInnerHTML={{
-          __html: `${baseCss}\n${headCss}\n${pageExtraCss}`,
+          __html: `${baseCss}\n${headCss}\n${pageExtraCss}\n
+            .popup-overlay {
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba(0, 0, 0, 0.7);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              z-index: 9999;
+              padding: 20px;
+            }
+            
+            .popup-content {
+              background: white;
+              border-radius: 8px;
+              padding: 20px;
+              max-width: 90%;
+              max-height: 90%;
+              overflow: auto;
+              position: relative;
+            }
+            
+            .popup-close {
+              position: absolute;
+              top: 10px;
+              right: 10px;
+              background: #dc2626;
+              color: white;
+              border: none;
+              border-radius: 50%;
+              width: 30px;
+              height: 30px;
+              font-size: 18px;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            
+            .popup-image {
+              max-width: 100%;
+              height: auto;
+              display: block;
+            }
+            
+            .popup-label {
+              margin-top: 20px;
+              font-size: 24px;
+              font-weight: bold;
+              color: #dc2626;
+              text-align: center;
+            }
+            
+            .popup-actions {
+              margin-top: 20px;
+              display: flex;
+              gap: 10px;
+              justify-content: center;
+            }
+            
+            .popup-btn {
+              padding: 10px 20px;
+              border-radius: 4px;
+              cursor: pointer;
+              font-size: 16px;
+            }
+            
+            .popup-btn-primary {
+              background: #dc2626;
+              color: white;
+              border: none;
+            }
+            
+            .popup-btn-secondary {
+              background: #e5e7eb;
+              color: #1f2937;
+              border: none;
+            }
+          `,
         }}
       />
       <div dangerouslySetInnerHTML={{ __html: bodyHtml }} />
+      
+      {isPopupOpen && (
+        <div className="popup-overlay" onClick={() => setIsPopupOpen(false)}>
+          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+            <button className="popup-close" onClick={() => setIsPopupOpen(false)}>
+              ×
+            </button>
+            <img src={popupImage} alt="Popup" className="popup-image" />
+            <div className="popup-label">20% Discount on Chime</div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
