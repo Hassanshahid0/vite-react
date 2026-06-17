@@ -6,9 +6,6 @@ import logo from './assets/logo.png'
 import popupImage from './assets/image.png'
 import './App.css'
 
-
-
-
 type CartItem = {
   id: string
   name: string
@@ -54,8 +51,14 @@ function App() {
       const anchor = target?.closest?.('a[href]') as HTMLAnchorElement | null
       if (!anchor) return
 
+      // Check if this is the "Go to Order Now" link
       const href = anchor.getAttribute('href') ?? ''
-      if (!href) return
+      const linkText = anchor.textContent?.toLowerCase() ?? ''
+      if (href === '/order-now' && linkText.includes('go to order now')) {
+        event.preventDefault()
+        setIsPopupOpen(true)
+        return
+      }
 
       const lower = href.toLowerCase()
       if (
@@ -103,14 +106,6 @@ function App() {
     const onDocClick = (e: MouseEvent) => {
       const target = e.target as Element | null
       if (!target) return
-
-      // Check if clicked "Go to Order Now" link
-      const goToOrderNowLink = target.closest('a[href="/order-now"]')
-      if (goToOrderNowLink && (goToOrderNowLink.textContent?.includes('Go to Order Now') || goToOrderNowLink.textContent?.includes('go to order now'))) {
-        e.preventDefault()
-        setIsPopupOpen(true)
-        return
-      }
 
       const addBtn = target.closest?.('[data-cs-add-to-cart]') as HTMLElement | null
       if (addBtn) {
