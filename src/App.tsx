@@ -6,6 +6,9 @@ import logo from './assets/logo.png'
 import popupImage from './assets/image.png'
 import './App.css'
 
+
+
+
 type CartItem = {
   id: string
   name: string
