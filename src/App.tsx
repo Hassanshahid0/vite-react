@@ -115,7 +115,7 @@ function App() {
           classical: { name: 'Classical', price: 380 },
           classic: { name: 'Classical', price: 380 },
           exotic: { name: 'Exotic', price: 340 },
-          commercial: { name: 'Commercial', price: 15 },
+          commercial: { name: 'Commercial', price: 500 },
         }
         const pkg = packageMap[key]
         if (!pkg) return
@@ -315,7 +315,7 @@ function App() {
                   <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=800&q=60" class="cs-card__image" alt="Commercial Inspection">
                   <div class="cs-card__head">
                     <h3 class="cs-card__title">Commercial</h3>
-                    <div class="cs-card__price">$15</div>
+                    <div class="cs-card__price">$500</div>
                   </div>
                   <ul class="cs-card__list">
                     <li>For work trucks, vans, and commercial vehicles</li>
@@ -786,6 +786,13 @@ function App() {
 
     const shouldApplyLemonSquadCustomizations = pageBaseOrigin === 'https://lemonsquad.com'
     const shouldApplyPomcarLocalLinks = pageBaseOrigin === 'https://pomcar.com'
+
+    // Make coverage-cta__wrapper links unresponsive
+    doc.querySelectorAll('a.coverage-cta__wrapper').forEach((a) => {
+      a.removeAttribute('href')
+      a.style.pointerEvents = 'none'
+      a.style.cursor = 'default'
+    })
 
     const standardizedHeaderHtml = `
       <header class="main-header">
